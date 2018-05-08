@@ -58,6 +58,7 @@ The package replaces only certain files in your lang directories:
 
     buttons.php
     errors.php
+    forms.php
     statuses.php
 
 He does not touch any other files.
