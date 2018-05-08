@@ -59,7 +59,7 @@ return [
 
     '500' => 'Internal Server Error',
     '501' => 'Not Implemented',
-    '502' => '502 Bad Gateway',
+    '502' => 'Bad Gateway',
     '503' => 'Maintenance Mode',
     '504' => 'Gateway Timeout',
     '505' => 'HTTP Version Not Supported',
