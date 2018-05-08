@@ -1,17 +1,17 @@
 <?php
 
 return [
-    'ok'     => 'OK',
+    'ok' => 'OK',
     'cancel' => 'Stornieren',
 
-    'send'   => 'Senden',
+    'send' => 'Senden',
     'submit' => 'Senden',
 
-    'reset'    => 'Zurücksetzen',
+    'reset' => 'Zurücksetzen',
     'resetAll' => 'Alles zurücksetzen',
 
     'yes' => 'Ja',
-    'no'  => 'Nein',
+    'no' => 'Nein',
 
     'prev' => 'Vorherige',
     'next' => 'Nächster',
@@ -22,6 +22,6 @@ return [
     'clear' => 'Löschen',
     'today' => 'Heute',
 
-    'openMenu'  => 'Menü öffnen',
+    'openMenu' => 'Menü öffnen',
     'closeMenu' => 'Menü schließen',
 ];
