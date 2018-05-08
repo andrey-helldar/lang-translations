@@ -127,8 +127,7 @@ class LangTranslationsInstall extends Command
      */
     private function processLang($lang)
     {
-        $dir = $lang === 'en' ? '../script/en' : $lang;
-        $src = $this->finish($this->path_src . $dir, '/');
+        $src = $this->finish($this->path_src . $lang, '/');
         $dst = $this->finish($this->path_dst . $lang, '/');
 
         if (!file_exists($src)) {
