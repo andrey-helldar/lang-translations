@@ -13,15 +13,15 @@ return [
     'fax' => 'Fax',
 
     'comment' => 'Kommentar',
-    'title'   => 'Titel',
+    'title' => 'Titel',
     'caption' => 'Bildbeschriftung',
-    'theme'   => 'Thema',
+    'theme' => 'Thema',
 
-    'date'       => 'Datum',
-    'startedAt'  => 'Fing an bei',
+    'date' => 'Datum',
+    'startedAt' => 'Fing an bei',
     'finishedAt' => 'Beendet bei',
 
-    'price'     => 'Preis',
+    'price' => 'Preis',
     'priceFrom' => 'Preis von',
     'priceTill' => 'Preis bis',
 
