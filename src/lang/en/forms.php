@@ -13,15 +13,15 @@ return [
     'fax' => 'Fax',
 
     'comment' => 'Comment',
-    'title'   => 'Title',
+    'title' => 'Title',
     'caption' => 'Caption',
-    'theme'   => 'Theme',
+    'theme' => 'Theme',
 
-    'date'       => 'Date',
-    'startedAt'  => 'Started At',
+    'date' => 'Date',
+    'startedAt' => 'Started At',
     'finishedAt' => 'Finished At',
 
-    'price'     => 'Price',
+    'price' => 'Price',
     'priceFrom' => 'Price From',
     'priceTill' => 'Price Till',
 
