@@ -2,15 +2,15 @@
 
 return [
     'email' => 'Email',
-    'name'  => 'Name',
+    'name' => 'Name',
 
-    'fullName'  => 'Vollständiger Name',
+    'fullName' => 'Vollständiger Name',
     'firstName' => 'Vorname',
-    'lastName'  => 'Familienname',
+    'lastName' => 'Familienname',
 
     'address' => 'Adresse',
-    'phone'   => 'Telefon',
-    'fax'     => 'Fax',
+    'phone' => 'Telefon',
+    'fax' => 'Fax',
 
     'iAgree' => 'Ich stimme zu',
 

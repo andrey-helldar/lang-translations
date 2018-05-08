@@ -2,15 +2,15 @@
 
 return [
     'email' => 'Email',
-    'name'  => 'Имя',
+    'name' => 'Имя',
 
-    'fullName'  => 'Полное имя',
+    'fullName' => 'Полное имя',
     'firstName' => 'Имя',
-    'lastName'  => 'Фамилия',
+    'lastName' => 'Фамилия',
 
     'address' => 'Адрес',
-    'phone'   => 'Телефон',
-    'fax'     => 'Факс',
+    'phone' => 'Телефон',
+    'fax' => 'Факс',
 
     'iAgree' => 'Я согласен',
 
