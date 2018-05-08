@@ -1,0 +1,36 @@
+{
+    "name": "andrey-helldar/lang-translations",
+    "description": "Translation of main messages",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrey Helldar",
+            "email": "helldar@ai-rus.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.9",
+        "illuminate/console": "^5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Helldar\\LangTranslations\\": "src"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Helldar\\LangTranslations\\ServiceProvider"
+            ]
+        }
+    }
+}
