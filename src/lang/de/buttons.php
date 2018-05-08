@@ -7,6 +7,14 @@ return [
     'send' => 'Senden',
     'submit' => 'Senden',
 
+    'store'   => 'Speichern',
+    'save'    => 'Speichern',
+    'create'  => 'Erstellen',
+    'update'  => 'Aktualisieren',
+    'upgrade' => 'Upgrade',
+    'delete'  => 'Löschen',
+    'filter'  => 'Filter',
+
     'reset' => 'Zurücksetzen',
     'resetAll' => 'Alles zurücksetzen',
 
