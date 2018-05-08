@@ -12,6 +12,19 @@ return [
     'phone' => 'Phone',
     'fax' => 'Fax',
 
+    'comment' => 'Comment',
+    'title'   => 'Title',
+    'caption' => 'Caption',
+    'theme'   => 'Theme',
+
+    'date'       => 'Date',
+    'startedAt'  => 'Started At',
+    'finishedAt' => 'Finished At',
+
+    'price'     => 'Price',
+    'priceFrom' => 'Price From',
+    'priceTill' => 'Price Till',
+
     'iAgree' => 'I agree',
 
     'country' => 'Country',
