@@ -1,35 +1,47 @@
 <?php
 
 return [
-    'ok' => 'OK',
+    'ok'     => 'OK',
     'cancel' => 'Cancel',
 
-    'send' => 'Send',
+    'send'   => 'Send',
     'submit' => 'Submit',
 
-    'store' => 'Store',
-    'save' => 'Save',
-    'create' => 'Create',
-    'update' => 'Update',
+    'store'   => 'Store',
+    'save'    => 'Save',
+    'create'  => 'Create',
+    'update'  => 'Update',
     'upgrade' => 'Upgrade',
-    'delete' => 'Delete',
-    'filter' => 'Filter',
+    'delete'  => 'Delete',
+    'filter'  => 'Filter',
+    'back'    => 'Back',
 
-    'reset' => 'Reset',
+    'reset'    => 'Reset',
     'resetAll' => 'Reset All',
 
     'yes' => 'Yes',
-    'no' => 'No',
+    'no'  => 'No',
 
     'prev' => 'Prev',
     'next' => 'Next',
 
     'toMain' => 'To Main',
     'toBack' => 'To Back',
+    'toTop'  => 'To Top',
 
     'clear' => 'Clear',
     'today' => 'Today',
 
-    'openMenu' => 'Open Menu',
+    'openMenu'  => 'Open Menu',
     'closeMenu' => 'Close Menu',
+
+    'login'  => 'Login',
+    'logout' => 'Logout',
+
+    'signIn' => 'Sign In',
+    'signUp' => 'Sign Up',
+
+    'forgotYourPassword'    => 'Forgot your password?',
+    'sendPasswordResetLink' => 'Send password reset link',
+    'resetPassword'         => 'Reset password',
 ];

@@ -17,4 +17,8 @@ return [
     'dataNotFound' => 'Данные не найдены',
     'itemsNotFound' => 'Элементы не найдены',
     'recordsNotFound' => 'Записи не найдены',
+
+    'logoutPleaseWait' => 'Выходим... Пожалуйста подождите...',
+
+    'noData' => 'Нет данных',
 ];

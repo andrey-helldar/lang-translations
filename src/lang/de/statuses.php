@@ -17,4 +17,8 @@ return [
     'dataNotFound' => 'Daten nicht gefunden',
     'itemsNotFound' => 'Artikel nicht gefunden',
     'recordsNotFound' => 'Datensätze nicht gefunden',
+
+    'logoutPleaseWait' => 'Ausloggen... Bitte warten...',
+
+    'noData' => 'Keine Daten',
 ];

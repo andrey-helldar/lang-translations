@@ -13,6 +13,7 @@ return [
     'fax' => 'Fax',
 
     'comment' => 'Comment',
+    'slug' => 'Slug',
     'title' => 'Title',
     'caption' => 'Caption',
     'theme' => 'Theme',
@@ -28,4 +29,9 @@ return [
     'iAgree' => 'I agree',
 
     'country' => 'Country',
+
+    'password' => 'Password',
+    'confirmPassword' => 'Confirm Password',
+
+    'rememberMe' => 'Remember Me',
 ];

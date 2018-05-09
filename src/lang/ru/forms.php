@@ -13,6 +13,7 @@ return [
     'fax' => 'Факс',
 
     'comment' => 'Комментарий',
+    'slug' => 'Slug',
     'title' => 'Заголовок',
     'caption' => 'Заголовок',
     'theme' => 'Тема',
@@ -28,4 +29,9 @@ return [
     'iAgree' => 'Я согласен',
 
     'country' => 'Страна',
+
+    'password' => 'Пароль',
+    'confirmPassword' => 'Подтверждение пароля',
+
+    'rememberMe' => 'Запомнить меня',
 ];
