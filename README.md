@@ -5,17 +5,11 @@ Translation of main messages.
 ![Lang Translations Library](https://user-images.githubusercontent.com/10347617/39757295-1676df7c-52d5-11e8-90b1-88eb8511aa63.png)
 
 <p align="center">
+<a href="https://styleci.io/repos/132602203"><img src="https://styleci.io/repos/132602203/shield" alt="StyleCI" /></a>
 <a href="https://packagist.org/packages/andrey-helldar/lang-translations"><img src="https://img.shields.io/packagist/dt/andrey-helldar/lang-translations.svg?style=flat-square" alt="Total Downloads" /></a>
 <a href="https://packagist.org/packages/andrey-helldar/lang-translations"><img src="https://poser.pugx.org/andrey-helldar/lang-translations/v/stable?format=flat-square" alt="Latest Stable Version" /></a>
 <a href="https://packagist.org/packages/andrey-helldar/lang-translations"><img src="https://poser.pugx.org/andrey-helldar/lang-translations/v/unstable?format=flat-square" alt="Latest Unstable Version" /></a>
-<a href="https://github.com/andrey-helldar/lang-translations"><img src="https://poser.pugx.org/andrey-helldar/lang-translations/license?format=flat-square" alt="License" /></a>
-</p>
-
-
-<p align="center">
-<a href="https://www.versioneye.com/php/andrey-helldar:lang-translations/dev-master"><img src="https://www.versioneye.com/php/andrey-helldar:lang-translations/dev-master/badge?style=flat-square" alt="Dependency Status" /></a>
-<a href="https://styleci.io/repos/132602203"><img src="https://styleci.io/repos/132602203/shield" alt="StyleCI" /></a>
-<a href="https://php-eye.com/package/andrey-helldar/lang-translations"><img src="https://php-eye.com/badge/andrey-helldar/lang-translations/tested.svg?style=flat" alt="PHP-Eye" /></a>
+<a href="https://github.com/andrey-helldar/lang-translations/blob/master/LICENSE"><img src="https://poser.pugx.org/andrey-helldar/lang-translations/license?format=flat-square" alt="License" /></a>
 </p>
 
 
