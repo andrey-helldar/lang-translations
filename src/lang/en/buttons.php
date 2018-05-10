@@ -29,8 +29,15 @@ return [
     'toBack' => 'To Back',
     'toTop' => 'To Top',
 
+    'goBack' => 'Go Back',
+
     'clear' => 'Clear',
     'today' => 'Today',
+
+    'more' => 'More',
+    'all' => 'All',
+    'show' => 'Show',
+    'showAll' => 'Show All',
 
     'openMenu' => 'Open Menu',
     'closeMenu' => 'Close Menu',

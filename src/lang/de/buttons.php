@@ -29,8 +29,15 @@ return [
     'toBack' => 'Unterstützen',
     'toTop' => 'Nach oben',
 
+    'goBack' => 'Geh zurück',
+
     'clear' => 'Löschen',
     'today' => 'Heute',
+
+    'more' => 'Mehr',
+    'all' => 'Alle',
+    'show' => 'Zeige',
+    'showAll' => 'Zeige alles',
 
     'openMenu' => 'Menü öffnen',
     'closeMenu' => 'Menü schließen',
