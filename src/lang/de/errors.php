@@ -31,7 +31,7 @@ return [
     '401' => 'Nicht autorisiert',
     '402' => 'Zahlung erforderlich',
     '403' => 'Verboten',
-    '404' => 'Nicht gefunden',
+    '404' => 'Seite nicht gefunden',
     '405' => 'Methode nicht erlaubt',
     '406' => 'Nicht annehmbar',
     '407' => 'Proxy-Authentifizierung erforderlich',
