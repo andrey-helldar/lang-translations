@@ -18,6 +18,9 @@ return [
     'itemsNotFound' => 'Items Not Found',
     'recordsNotFound' => 'Records Not Found',
 
+    'itemNotFound' => 'Item Not Found',
+    'recordNotFound' => 'Record Not Found',
+
     'logoutPleaseWait' => 'Logout... Please wait...',
 
     'noData' => 'No Data',

@@ -18,6 +18,9 @@ return [
     'itemsNotFound' => 'Elemente nicht gefunden',
     'recordsNotFound' => 'Datensätze nicht gefunden',
 
+    'itemNotFound' => 'Element nicht gefunden',
+    'recordNotFound' => 'Datensatz nicht gefunden',
+
     'logoutPleaseWait' => 'Ausloggen... Bitte warten...',
 
     'noData' => 'Keine Daten',
