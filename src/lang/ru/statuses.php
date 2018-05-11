@@ -19,7 +19,7 @@ return [
     'recordsNotFound' => 'Записи не найдены',
 
     'itemNotFound' => 'Элемент не найден',
-    'recordNotFound' => 'Запиь не найдена',
+    'recordNotFound' => 'Запись не найдена',
 
     'logoutPleaseWait' => 'Выходим... Пожалуйста подождите...',
 
