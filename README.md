@@ -2,7 +2,7 @@
 
 Translation of main messages.
 
-![Lang Translations Library](https://user-images.githubusercontent.com/10347617/39757295-1676df7c-52d5-11e8-90b1-88eb8511aa63.png)
+![lang translations](https://user-images.githubusercontent.com/10347617/40196741-1ae657bc-5a1a-11e8-8d0d-ddc25155b4f8.png)
 
 <p align="center">
 <a href="https://styleci.io/repos/132602203"><img src="https://styleci.io/repos/132602203/shield" alt="StyleCI" /></a>
