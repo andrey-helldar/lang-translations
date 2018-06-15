@@ -17,10 +17,11 @@ return [
     'dataNotFound' => 'Данные не найдены',
     'itemsNotFound' => 'Элементы не найдены',
     'recordsNotFound' => 'Записи не найдены',
-    'methodNotFound' => 'Метод не найден',
+    'methodsNotFound' => 'Методы не найдены',
 
     'itemNotFound' => 'Элемент не найден',
     'recordNotFound' => 'Запись не найдена',
+    'methodNotFound' => 'Метод не найден',
 
     'logoutPleaseWait' => 'Выходим... Пожалуйста подождите...',
 
