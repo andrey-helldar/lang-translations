@@ -17,6 +17,7 @@ return [
     'dataNotFound' => 'Daten nicht gefunden',
     'itemsNotFound' => 'Elemente nicht gefunden',
     'recordsNotFound' => 'Datensätze nicht gefunden',
+    'methodNotFound' => 'Methode nicht gefunden',
 
     'itemNotFound' => 'Element nicht gefunden',
     'recordNotFound' => 'Datensatz nicht gefunden',

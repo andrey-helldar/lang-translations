@@ -17,6 +17,7 @@ return [
     'dataNotFound' => 'Данные не найдены',
     'itemsNotFound' => 'Элементы не найдены',
     'recordsNotFound' => 'Записи не найдены',
+    'methodNotFound' => 'Метод не найден',
 
     'itemNotFound' => 'Элемент не найден',
     'recordNotFound' => 'Запись не найдена',
