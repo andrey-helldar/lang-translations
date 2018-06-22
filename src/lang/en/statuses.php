@@ -17,9 +17,11 @@ return [
     'dataNotFound' => 'Data Not Found',
     'itemsNotFound' => 'Items Not Found',
     'recordsNotFound' => 'Records Not Found',
+    'methodsNotFound' => 'Methods Not Found',
 
     'itemNotFound' => 'Item Not Found',
     'recordNotFound' => 'Record Not Found',
+    'methodNotFound' => 'Method Not Found',
 
     'logoutPleaseWait' => 'Logout... Please wait...',
 
