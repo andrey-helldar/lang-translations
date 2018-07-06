@@ -1,54 +1,54 @@
 <?php
 
 return [
-    'ok' => 'OK',
+    'ok'     => 'OK',
     'cancel' => 'Cancel',
 
-    'send' => 'Send',
+    'send'   => 'Send',
     'submit' => 'Submit',
 
-    'store' => 'Store',
-    'save' => 'Save',
-    'create' => 'Create',
-    'update' => 'Update',
+    'store'   => 'Store',
+    'save'    => 'Save',
+    'create'  => 'Create',
+    'update'  => 'Update',
     'upgrade' => 'Upgrade',
-    'delete' => 'Delete',
-    'filter' => 'Filter',
-    'back' => 'Back',
+    'delete'  => 'Delete',
+    'filter'  => 'Filter',
+    'back'    => 'Back',
 
-    'reset' => 'Reset',
+    'reset'    => 'Reset',
     'resetAll' => 'Reset All',
 
     'yes' => 'Yes',
-    'no' => 'No',
+    'no'  => 'No',
 
     'prev' => 'Prev',
     'next' => 'Next',
 
     'toMain' => 'To Main',
     'toBack' => 'To Back',
-    'toTop' => 'To Top',
+    'toTop'  => 'To Top',
 
     'goBack' => 'Go Back',
 
     'clear' => 'Clear',
     'today' => 'Today',
 
-    'more' => 'More',
-    'all' => 'All',
-    'show' => 'Show',
+    'more'    => 'More',
+    'all'     => 'All',
+    'show'    => 'Show',
     'showAll' => 'Show All',
 
-    'openMenu' => 'Open Menu',
+    'openMenu'  => 'Open Menu',
     'closeMenu' => 'Close Menu',
 
-    'login' => 'Login',
+    'login'  => 'Login',
     'logout' => 'Logout',
 
     'signIn' => 'Sign In',
     'signUp' => 'Sign Up',
 
-    'forgotYourPassword' => 'Forgot your password?',
+    'forgotYourPassword'    => 'Forgot your password?',
     'sendPasswordResetLink' => 'Send password reset link',
-    'resetPassword' => 'Reset password',
+    'resetPassword'         => 'Reset password',
 ];

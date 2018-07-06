@@ -54,7 +54,7 @@ class LangTranslationsUpdate extends Command
     private function install($lang = 'en')
     {
         $this->call('lang-translations:install', [
-            'lang' => $lang,
+            'lang'    => $lang,
             '--force' => true,
         ]);
     }

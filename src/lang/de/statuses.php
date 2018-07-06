@@ -3,23 +3,23 @@
 return [
     'ok' => 'OK',
 
-    'loading' => 'Wird geladen...',
-    'sending' => 'Senden...',
+    'loading'    => 'Wird geladen...',
+    'sending'    => 'Senden...',
     'processing' => 'Wird bearbeitet...',
-    'updating' => 'Aktualisierung...',
+    'updating'   => 'Aktualisierung...',
 
-    'loaded' => 'Geladen',
-    'sended' => 'Gesendet',
+    'loaded'    => 'Geladen',
+    'sended'    => 'Gesendet',
     'processed' => 'Verarbeitet',
-    'updated' => 'Aktualisiert',
+    'updated'   => 'Aktualisiert',
 
-    'notFound' => 'Nicht gefunden',
-    'dataNotFound' => 'Daten nicht gefunden',
-    'itemsNotFound' => 'Elemente nicht gefunden',
+    'notFound'        => 'Nicht gefunden',
+    'dataNotFound'    => 'Daten nicht gefunden',
+    'itemsNotFound'   => 'Elemente nicht gefunden',
     'recordsNotFound' => 'Datensätze nicht gefunden',
     'methodsNotFound' => 'Methoden nicht gefunden',
 
-    'itemNotFound' => 'Element nicht gefunden',
+    'itemNotFound'   => 'Element nicht gefunden',
     'recordNotFound' => 'Datensatz nicht gefunden',
     'methodNotFound' => 'Methode nicht gefunden',
 
