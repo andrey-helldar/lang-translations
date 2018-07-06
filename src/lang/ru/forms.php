@@ -2,27 +2,27 @@
 
 return [
     'email' => 'Email',
-    'name' => 'Имя',
+    'name'  => 'Имя',
 
-    'fullName' => 'Полное имя',
+    'fullName'  => 'Полное имя',
     'firstName' => 'Имя',
-    'lastName' => 'Фамилия',
+    'lastName'  => 'Фамилия',
 
     'address' => 'Адрес',
-    'phone' => 'Телефон',
-    'fax' => 'Факс',
+    'phone'   => 'Телефон',
+    'fax'     => 'Факс',
 
     'comment' => 'Комментарий',
-    'slug' => 'Slug',
-    'title' => 'Заголовок',
+    'slug'    => 'Slug',
+    'title'   => 'Заголовок',
     'caption' => 'Заголовок',
-    'theme' => 'Тема',
+    'theme'   => 'Тема',
 
-    'date' => 'Дата',
-    'startedAt' => 'Начнется в',
+    'date'       => 'Дата',
+    'startedAt'  => 'Начнется в',
     'finishedAt' => 'Закончится в',
 
-    'price' => 'Стоимость',
+    'price'     => 'Стоимость',
     'priceFrom' => 'Стоимость от',
     'priceTill' => 'Стоимость до',
 
@@ -30,7 +30,7 @@ return [
 
     'country' => 'Страна',
 
-    'password' => 'Пароль',
+    'password'        => 'Пароль',
     'confirmPassword' => 'Подтверждение пароля',
 
     'rememberMe' => 'Запомнить меня',

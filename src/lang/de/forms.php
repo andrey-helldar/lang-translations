@@ -2,27 +2,27 @@
 
 return [
     'email' => 'Email',
-    'name' => 'Name',
+    'name'  => 'Name',
 
-    'fullName' => 'Vollständiger Name',
+    'fullName'  => 'Vollständiger Name',
     'firstName' => 'Vorname',
-    'lastName' => 'Familienname',
+    'lastName'  => 'Familienname',
 
     'address' => 'Adresse',
-    'phone' => 'Telefon',
-    'fax' => 'Fax',
+    'phone'   => 'Telefon',
+    'fax'     => 'Fax',
 
     'comment' => 'Kommentar',
-    'slug' => 'Slug',
-    'title' => 'Titel',
+    'slug'    => 'Slug',
+    'title'   => 'Titel',
     'caption' => 'Bildbeschriftung',
-    'theme' => 'Thema',
+    'theme'   => 'Thema',
 
-    'date' => 'Datum',
-    'startedAt' => 'Fing an bei',
+    'date'       => 'Datum',
+    'startedAt'  => 'Fing an bei',
     'finishedAt' => 'Beendet bei',
 
-    'price' => 'Preis',
+    'price'     => 'Preis',
     'priceFrom' => 'Preis von',
     'priceTill' => 'Preis bis',
 
@@ -30,7 +30,7 @@ return [
 
     'country' => 'Land',
 
-    'password' => 'Passwort',
+    'password'        => 'Passwort',
     'confirmPassword' => 'Bestätige das Passwort',
 
     'rememberMe' => 'Erinnere dich an mich',

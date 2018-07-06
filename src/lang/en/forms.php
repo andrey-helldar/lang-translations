@@ -2,27 +2,27 @@
 
 return [
     'email' => 'Email',
-    'name' => 'Name',
+    'name'  => 'Name',
 
-    'fullName' => 'Full Name',
+    'fullName'  => 'Full Name',
     'firstName' => 'First Name',
-    'lastName' => 'Last Name',
+    'lastName'  => 'Last Name',
 
     'address' => 'Address',
-    'phone' => 'Phone',
-    'fax' => 'Fax',
+    'phone'   => 'Phone',
+    'fax'     => 'Fax',
 
     'comment' => 'Comment',
-    'slug' => 'Slug',
-    'title' => 'Title',
+    'slug'    => 'Slug',
+    'title'   => 'Title',
     'caption' => 'Caption',
-    'theme' => 'Theme',
+    'theme'   => 'Theme',
 
-    'date' => 'Date',
-    'startedAt' => 'Started At',
+    'date'       => 'Date',
+    'startedAt'  => 'Started At',
     'finishedAt' => 'Finished At',
 
-    'price' => 'Price',
+    'price'     => 'Price',
     'priceFrom' => 'Price From',
     'priceTill' => 'Price Till',
 
@@ -30,7 +30,7 @@ return [
 
     'country' => 'Country',
 
-    'password' => 'Password',
+    'password'        => 'Password',
     'confirmPassword' => 'Confirm Password',
 
     'rememberMe' => 'Remember Me',
