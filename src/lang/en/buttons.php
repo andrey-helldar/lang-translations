@@ -14,7 +14,6 @@ return [
     'upgrade' => 'Upgrade',
     'delete'  => 'Delete',
     'filter'  => 'Filter',
-    'back'    => 'Back',
 
     'reset'    => 'Reset',
     'resetAll' => 'Reset All',
@@ -24,12 +23,11 @@ return [
 
     'prev' => 'Prev',
     'next' => 'Next',
+    'back' => 'Back',
 
     'toMain' => 'To Main',
     'toBack' => 'To Back',
     'toTop'  => 'To Top',
-
-    'goBack' => 'Go Back',
 
     'clear' => 'Clear',
     'today' => 'Today',

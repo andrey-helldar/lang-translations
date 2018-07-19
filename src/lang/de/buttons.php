@@ -14,7 +14,6 @@ return [
     'upgrade' => 'Upgrade',
     'delete'  => 'Löschen',
     'filter'  => 'Filter',
-    'back'    => 'Zurück',
 
     'reset'    => 'Zurücksetzen',
     'resetAll' => 'Alles zurücksetzen',
@@ -24,12 +23,11 @@ return [
 
     'prev' => 'Vorherige',
     'next' => 'Nächster',
+    'back' => 'Zurück',
 
     'toMain' => 'Zum Haupt',
     'toBack' => 'Unterstützen',
     'toTop'  => 'Nach oben',
-
-    'goBack' => 'Geh zurück',
 
     'clear' => 'Löschen',
     'today' => 'Heute',
