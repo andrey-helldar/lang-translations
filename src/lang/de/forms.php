@@ -29,6 +29,11 @@ return [
     'iAgree' => 'Ich stimme zu',
 
     'country' => 'Land',
+    'city'    => 'Stadt',
+    'street'  => 'Straße',
+    'house'   => 'Haus',
+    'housing' => 'Gehäuse',
+    'flat'    => 'Eben',
 
     'password'        => 'Passwort',
     'confirmPassword' => 'Bestätige das Passwort',

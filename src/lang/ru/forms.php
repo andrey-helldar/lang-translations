@@ -29,6 +29,11 @@ return [
     'iAgree' => 'Я согласен',
 
     'country' => 'Страна',
+    'city'    => 'Город',
+    'street'  => 'Улица',
+    'house'   => 'Дом',
+    'housing' => 'Корпус',
+    'flat'    => 'Квартира',
 
     'password'        => 'Пароль',
     'confirmPassword' => 'Подтверждение пароля',

@@ -29,6 +29,11 @@ return [
     'iAgree' => 'I agree',
 
     'country' => 'Country',
+    'city'    => 'City',
+    'street'  => 'Street',
+    'house'   => 'House',
+    'housing' => 'Housing',
+    'flat'    => 'Flat',
 
     'password'        => 'Password',
     'confirmPassword' => 'Confirm Password',
