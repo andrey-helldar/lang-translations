@@ -47,8 +47,8 @@ class LangTranslationsInstall extends Command
      */
     public function __construct()
     {
-        $this->path_src = $this->formatPath('vendor/andrey-helldar/lang-translations/src/lang');
-        $this->path_dst = $this->formatPath('resources/lang');
+        $this->path_src = str_finish(__DIR__ . '/../lang', '/');
+        $this->path_dst = str_finish(resource_path('lang'), '/');
 
         parent::__construct();
     }
@@ -67,31 +67,6 @@ class LangTranslationsInstall extends Command
     }
 
     /**
-     * @param string $value
-     *
-     * @return string
-     */
-    private function formatPath($value)
-    {
-        return $this->finish(base_path($value), '/');
-    }
-
-    /**
-     * Cap a string with a single instance of a given value.
-     *
-     * @param string $value
-     * @param string $cap
-     *
-     * @return string
-     */
-    private function finish($value, $cap)
-    {
-        $quoted = preg_quote($cap, '/');
-
-        return preg_replace('/(?:' . $quoted . ')+$/u', '', $value) . $cap;
-    }
-
-    /**
      * Make directory if not exists.
      *
      * @param $path
@@ -99,7 +74,7 @@ class LangTranslationsInstall extends Command
     private function makeDir($path)
     {
         if (!file_exists($path)) {
-            mkdir($path);
+            mkdir($path, 0775, true);
         }
     }
 
@@ -127,8 +102,8 @@ class LangTranslationsInstall extends Command
      */
     private function processLang($lang)
     {
-        $src = $this->finish($this->path_src . $lang, '/');
-        $dst = $this->finish($this->path_dst . $lang, '/');
+        $src = str_finish($this->path_src . $lang, '/');
+        $dst = str_finish($this->path_dst . $lang, '/');
 
         if (!file_exists($src)) {
             $this->error("The directory for the \"{$lang}\" language was not found");
@@ -147,9 +122,7 @@ class LangTranslationsInstall extends Command
      */
     private function processFile($src, $dst, $lang)
     {
-        $src_files = scandir($src);
-
-        foreach ($src_files as $file) {
+        foreach (scandir($src) as $file) {
             $src_file = ($src . $file);
             $dst_file = ($dst . $file);
 
