@@ -11,7 +11,12 @@ return [
     'loaded'    => 'Loaded',
     'sended'    => 'Sended',
     'processed' => 'Processed',
-    'updated'   => 'Updated',
+
+    'created'  => 'Created',
+    'stored'   => 'Stored',
+    'updated'  => 'Updated',
+    'deleted'  => 'Deleted',
+    'restored' => 'Restored',
 
     'notFound'        => 'Not Found',
     'dataNotFound'    => 'Data Not Found',

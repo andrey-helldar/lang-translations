@@ -11,7 +11,12 @@ return [
     'loaded'    => 'Загружено',
     'sended'    => 'Отправлено',
     'processed' => 'Обработано',
-    'updated'   => 'Обновлено',
+
+    'created'  => 'Создано',
+    'stored'   => 'Создано',
+    'updated'  => 'Обновлено',
+    'deleted'  => 'Удалено',
+    'restored' => 'Восстановлено',
 
     'notFound'        => 'Не найдено',
     'dataNotFound'    => 'Данные не найдены',
