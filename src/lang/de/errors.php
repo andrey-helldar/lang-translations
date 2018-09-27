@@ -47,6 +47,7 @@ return [
     '416' => 'Bereich nicht erfüllbar',
     '417' => 'Erwartung gescheitert',
     '418' => 'Ich bin eine Teekanne',
+    '419' => 'Sitzung ist abgelaufen',
     '421' => 'Fehlgeleitete Anfrage',
     '422' => 'Unverfügbare Entität',
     '423' => 'Gesperrt',
