@@ -7,6 +7,8 @@ return [
     'sending'    => 'Senden...',
     'processing' => 'Wird bearbeitet...',
     'updating'   => 'Aktualisierung...',
+    'deleting'   => 'Löschung...',
+    'restoring'  => 'Wiederherstellung...',
 
     'loaded'    => 'Geladen',
     'sended'    => 'Gesendet',
