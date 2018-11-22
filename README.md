@@ -26,7 +26,7 @@ Instead, you may of course manually update your require block and run `composer 
 ```json
 {
     "require": {
-        "andrey-helldar/lang-translations": "^1.0"
+        "andrey-helldar/lang-translations": "^1.1"
     }
 }
 ```
@@ -50,10 +50,10 @@ php artisan vendor:publish --provider="Helldar\LangTranslations\ServiceProvider"
 
 The package replaces only certain files in your lang directories:
 
-    buttons.php
-    errors.php
-    forms.php
-    statuses.php
+    buttons.php     // or buttons.json
+    errors.php      // or errors.json
+    forms.php       // or forms.json
+    statuses.php    // or statuses.json
 
 He does not touch any other files.
 
@@ -73,7 +73,14 @@ Also, if the files exist and you do not want to agree each time, you can pass th
 
 ```bash
 php artisan lang-translations:install en --force
-php artisan lang-translations:install en --f
+php artisan lang-translations:install en -f
+```
+
+By default, php translation files are copied. If you want to install json-files, then use the `--json` key:
+
+```bash
+php artisan lang-translations:install en --json
+php artisan lang-translations:install en -j
 ```
 
 
@@ -82,6 +89,8 @@ php artisan lang-translations:install en --f
 When executing the `php artisan lang-translations:update` command, the package learns which localizations are installed in your application and will replace the matching files.
 
 Command `php artisan lang-translations:update` is an alias of `php artisan lang-translations:install {langs} --force`.
+
+And command for updating json files: `php artisan lang-translations:update --json`
 
 
 ## Copyright and License

@@ -1,0 +1,40 @@
+{
+    "Email": "Email",
+    "Name": "Name",
+
+    "Full Name": "Full Name",
+    "First Name": "First Name",
+    "Last Name": "Last Name",
+
+    "Address": "Address",
+    "Phone": "Phone",
+    "Fax": "Fax",
+
+    "Comment": "Comment",
+    "Slug": "Slug",
+    "Title": "Title",
+    "Caption": "Caption",
+    "Theme": "Theme",
+
+    "Date": "Date",
+    "Started At": "Started At",
+    "Finished At": "Finished At",
+
+    "Price": "Price",
+    "Price From": "Price From",
+    "Price Till": "Price Till",
+
+    "I agree": "I agree",
+
+    "Country": "Country",
+    "City": "City",
+    "Street": "Street",
+    "House": "House",
+    "Housing": "Housing",
+    "Flat": "Flat",
+
+    "Password": "Password",
+    "Confirm Password": "Confirm Password",
+
+    "Remember Me": "Remember Me"
+}

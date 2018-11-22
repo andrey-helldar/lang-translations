@@ -6,39 +6,29 @@ use Illuminate\Console\Command;
 
 class LangTranslationsInstall extends Command
 {
-    /**
-     * The name and signature of the console command.
-     *
-     * @var string
-     */
-    protected $signature = 'lang-translations:install {lang* : Lang files to copy} {--f|force : Force replace lang files}';
+    /** @var string */
+    protected $signature = 'lang-translations:install' .
+    ' {lang* : Lang files to copy}' .
+    ' {--f|force : Force replace lang files}' .
+    ' {--j|json : Copy json files. If not specified, php files will be copied.}';
 
-    /**
-     * The console command description.
-     *
-     * @var string
-     */
+    /** @var string */
     protected $description = 'Install translations files.';
 
-    /**
-     * @var string
-     */
+    /** @var string */
     protected $path_src;
 
-    /**
-     * @var string
-     */
+    /** @var string */
     protected $path_dst;
 
-    /**
-     * @var array
-     */
+    /** @var */
     protected $lang;
 
-    /**
-     * @var bool
-     */
+    /** @var bool */
     protected $force = false;
+
+    /** @var string */
+    protected $extension;
 
     /**
      * Create a new command instance.
@@ -58,8 +48,9 @@ class LangTranslationsInstall extends Command
      */
     public function handle()
     {
-        $this->lang  = $this->argument('lang');
-        $this->force = (bool) $this->option('force');
+        $this->lang      = $this->argument('lang');
+        $this->force     = (bool) $this->option('force');
+        $this->extension = $this->option('json') ? '*.json' : '*.php';
 
         foreach ($this->lang as $lang) {
             $this->processLang($lang);
@@ -122,16 +113,18 @@ class LangTranslationsInstall extends Command
      */
     private function processFile($src, $dst, $lang)
     {
-        foreach (scandir($src) as $file) {
-            $src_file = ($src . $file);
-            $dst_file = ($dst . $file);
+        $src_path = $src . $this->extension;
 
+        foreach (glob($src_path) as $src_file) {
             if (!is_file($src_file)) {
                 continue;
             }
 
-            if ($this->force || !file_exists($dst_file) || $this->confirm("Replace {$lang}/{$file} files?")) {
-                $this->copy($src_file, $dst_file, ($lang . '/' . $file));
+            $filename = pathinfo($src_file, PATHINFO_BASENAME);
+            $dst_file = ($dst . $filename);
+
+            if ($this->force || !file_exists($dst_file) || $this->confirm("Replace {$lang}/{$filename} files?")) {
+                $this->copy($src_file, $dst_file, ($lang . '/' . $filename));
             }
         }
     }

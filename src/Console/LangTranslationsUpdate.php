@@ -11,7 +11,7 @@ class LangTranslationsUpdate extends Command
      *
      * @var string
      */
-    protected $signature = 'lang-translations:update';
+    protected $signature = 'lang-translations:update {--j|json}';
 
     /**
      * The console command description.
@@ -56,6 +56,7 @@ class LangTranslationsUpdate extends Command
         $this->call('lang-translations:install', [
             'lang'    => $lang,
             '--force' => true,
+            '--json'  => $this->option('json'),
         ]);
     }
 }
