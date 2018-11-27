@@ -27,6 +27,9 @@ class LangTranslationsInstall extends Command
     /** @var bool */
     protected $force = false;
 
+    /** @var bool */
+    protected $is_json = false;
+
     /** @var string */
     protected $extension;
 
@@ -50,6 +53,7 @@ class LangTranslationsInstall extends Command
     {
         $this->lang      = $this->argument('lang');
         $this->force     = (bool) $this->option('force');
+        $this->is_json   = (bool) $this->option('json');
         $this->extension = $this->option('json') ? '*.json' : '*.php';
 
         foreach ($this->lang as $lang) {
@@ -60,9 +64,9 @@ class LangTranslationsInstall extends Command
     /**
      * Make directory if not exists.
      *
-     * @param $path
+     * @param string $path
      */
-    private function makeDir($path)
+    private function makeDir(string $path)
     {
         if (!file_exists($path)) {
             mkdir($path, 0775, true);
@@ -93,11 +97,16 @@ class LangTranslationsInstall extends Command
      */
     private function processLang($lang)
     {
-        $src = str_finish($this->path_src . $lang, '/');
-        $dst = str_finish($this->path_dst . $lang, '/');
+        $src = str_finish($this->path_src, '/');
+        $dst = str_finish($this->path_dst, '/');
+
+        if (!$this->is_json) {
+            $src .= str_finish($lang, '/');
+            $dst .= str_finish($lang, '/');
+        }
 
         if (!file_exists($src)) {
-            $this->error("The directory for the \"{$lang}\" language was not found");
+            $this->error("The source directory for the \"{$lang}\" language was not found");
 
             return;
         }
@@ -116,15 +125,17 @@ class LangTranslationsInstall extends Command
         $src_path = $src . $this->extension;
 
         foreach (glob($src_path) as $src_file) {
-            if (!is_file($src_file)) {
+            $filename = pathinfo($src_file, PATHINFO_FILENAME);
+
+            if (!is_file($src_file) || $filename !== $lang) {
                 continue;
             }
 
-            $filename = pathinfo($src_file, PATHINFO_BASENAME);
-            $dst_file = ($dst . $filename);
+            $basename = pathinfo($src_file, PATHINFO_BASENAME);
+            $dst_file = ($dst . $basename);
 
-            if ($this->force || !file_exists($dst_file) || $this->confirm("Replace {$lang}/{$filename} files?")) {
-                $this->copy($src_file, $dst_file, ($lang . '/' . $filename));
+            if ($this->force || !file_exists($dst_file) || $this->confirm("Replace {$lang}/{$basename} files?")) {
+                $this->copy($src_file, $dst_file, ($lang . '/' . $basename));
             }
         }
     }
