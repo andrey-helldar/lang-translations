@@ -127,7 +127,7 @@ class LangTranslationsInstall extends Command
         foreach (glob($src_path) as $src_file) {
             $filename = pathinfo($src_file, PATHINFO_FILENAME);
 
-            if (!is_file($src_file) || $filename !== $lang) {
+            if (!is_file($src_file) || ($filename !== $lang && $this->is_json)) {
                 continue;
             }
 
