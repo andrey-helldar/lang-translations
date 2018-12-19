@@ -1,4 +1,4 @@
-# Lang Translations Library for Laravel 5.4+
+# Lang Translations Library for Laravel 5.3+
 
 Translation of main messages.
 
@@ -95,4 +95,4 @@ And command for updating json files: `php artisan lang-translations:update --jso
 
 ## Copyright and License
 
-`Lang Translations Library` was written by Andrey Helldar for the Laravel Framework 5.4 and later, and is released under the MIT License. See the [LICENSE](LICENSE) file for details.
+`Lang Translations Library` was written by Andrey Helldar for the Laravel Framework 5.3 and later, and is released under the MIT License. See the [LICENSE](LICENSE) file for details.
