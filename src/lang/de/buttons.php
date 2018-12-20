@@ -3,6 +3,7 @@
 return [
     'ok'     => 'OK',
     'cancel' => 'Stornieren',
+    'apply'  => 'Sich bewerben',
 
     'send'   => 'Senden',
     'submit' => 'Senden',
@@ -13,7 +14,10 @@ return [
     'update'  => 'Aktualisieren',
     'upgrade' => 'Upgrade',
     'delete'  => 'Löschen',
-    'filter'  => 'Filter',
+
+    'filter'     => 'Filter',
+    'showFilter' => 'Filter anzeigen',
+    'hideFilter' => 'Filter ausblenden',
 
     'reset'    => 'Zurücksetzen',
     'resetAll' => 'Alles zurücksetzen',
@@ -36,6 +40,8 @@ return [
     'all'     => 'Alle',
     'show'    => 'Zeige',
     'showAll' => 'Zeige alles',
+    'hide'    => 'Verbergen',
+    'hideAll' => 'Versteck alles',
 
     'openMenu'  => 'Menü öffnen',
     'closeMenu' => 'Menü schließen',

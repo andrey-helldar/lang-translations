@@ -3,6 +3,7 @@
 return [
     'ok'     => 'OK',
     'cancel' => 'Cancel',
+    'apply'  => 'Apply',
 
     'send'   => 'Send',
     'submit' => 'Submit',
@@ -13,7 +14,10 @@ return [
     'update'  => 'Update',
     'upgrade' => 'Upgrade',
     'delete'  => 'Delete',
-    'filter'  => 'Filter',
+
+    'filter'     => 'Filter',
+    'showFilter' => 'Show filter',
+    'hideFilter' => 'Hide filter',
 
     'reset'    => 'Reset',
     'resetAll' => 'Reset All',
@@ -36,6 +40,8 @@ return [
     'all'     => 'All',
     'show'    => 'Show',
     'showAll' => 'Show All',
+    'hide'    => 'Hide',
+    'hideAll' => 'Hide All',
 
     'openMenu'  => 'Open Menu',
     'closeMenu' => 'Close Menu',
