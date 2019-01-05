@@ -9,6 +9,7 @@ return [
     'updating'   => 'Aktualisierung...',
     'deleting'   => 'Löschung...',
     'restoring'  => 'Wiederherstellung...',
+    'saving'     => 'Sparen...',
 
     'loaded'    => 'Geladen',
     'sended'    => 'Gesendet',

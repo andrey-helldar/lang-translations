@@ -9,6 +9,7 @@ return [
     'updating'   => 'Updating...',
     'deleting'   => 'Deleting...',
     'restoring'  => 'Restoring...',
+    'saving'     => 'Saving...',
 
     'loaded'    => 'Loaded',
     'sended'    => 'Sended',
