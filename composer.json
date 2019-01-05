@@ -9,6 +9,9 @@
             "email": "helldar@ai-rus.com"
         }
     ],
+    "suggest": {
+        "andrey-helldar/laravel-lang-publisher": "Publisher lang files for the Laravel Framework from caouecs/Laravel-lang"
+    },
     "require": {
         "php": ">=5.6.9",
         "illuminate/console": "^5.3"
