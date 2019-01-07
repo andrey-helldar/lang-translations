@@ -12,7 +12,7 @@ return [
     'saving'     => 'Saving...',
 
     'loaded'    => 'Loaded',
-    'sended'    => 'Sended',
+    'sent'      => 'Sent',
     'processed' => 'Processed',
 
     'created'  => 'Created',

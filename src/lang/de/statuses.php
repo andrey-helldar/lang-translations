@@ -12,7 +12,7 @@ return [
     'saving'     => 'Sparen...',
 
     'loaded'    => 'Geladen',
-    'sended'    => 'Gesendet',
+    'sended'    => 'Geschickt',
     'processed' => 'Verarbeitet',
 
     'created'  => 'Erstellt',

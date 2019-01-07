@@ -12,7 +12,7 @@ return [
     'saving'     => '保存...',
 
     'loaded'    => '加载',
-    'sended'    => '提交',
+    'sent'      => '发送',
     'processed' => '处理',
 
     'created'  => '创建',
