@@ -10,7 +10,8 @@
         }
     ],
     "suggest": {
-        "andrey-helldar/laravel-lang-publisher": "Publisher lang files for the Laravel Framework from caouecs/Laravel-lang"
+        "andrey-helldar/laravel-lang-publisher": "Publisher lang files for the Laravel Framework from caouecs/Laravel-lang",
+        "composer require symfony/thanks": "Give thanks (in the form of a GitHub ⭐) to your fellow PHP package maintainers (not limited to Symfony components)!"
     },
     "require": {
         "php": ">=5.6.9",
