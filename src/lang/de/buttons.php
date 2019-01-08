@@ -4,6 +4,8 @@ return [
     'ok'     => 'OK',
     'cancel' => 'Stornieren',
     'apply'  => 'Sich bewerben',
+    'agree'  => 'Genau',
+
 
     'send'   => 'Senden',
     'submit' => 'Senden',

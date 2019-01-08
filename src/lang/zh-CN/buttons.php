@@ -4,6 +4,7 @@ return [
     'ok'     => '好',
     'cancel' => '取消',
     'apply'  => '应用',
+    'agree'  => '我同意',
 
     'send'   => '发送',
     'submit' => '提交',

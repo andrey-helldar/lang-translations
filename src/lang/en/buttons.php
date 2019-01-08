@@ -4,6 +4,7 @@ return [
     'ok'     => 'OK',
     'cancel' => 'Cancel',
     'apply'  => 'Apply',
+    'agree'  => 'I agree',
 
     'send'   => 'Send',
     'submit' => 'Submit',
