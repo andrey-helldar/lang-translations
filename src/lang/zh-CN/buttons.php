@@ -56,4 +56,7 @@ return [
     'forgotYourPassword'    => '忘记密码了吗？',
     'sendPasswordResetLink' => '发送密码重置链接',
     'resetPassword'         => '重设密码',
+
+    'iAgreeTo'                      => '我同意',
+    'termsOfProcessingPersonalData' => '处理个人数据的条款',
 ];

@@ -56,4 +56,7 @@ return [
     'forgotYourPassword'    => 'Забыли свой пароль?',
     'sendPasswordResetLink' => 'Отправить ссылку',
     'resetPassword'         => 'Сбросить пароль',
+
+    'iAgreeTo'                      => 'Я согласен с',
+    'termsOfProcessingPersonalData' => 'условиями обработки персональных данных',
 ];

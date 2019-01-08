@@ -56,4 +56,9 @@ return [
     'forgotYourPassword'    => 'Forgot your password?',
     'sendPasswordResetLink' => 'Send password reset link',
     'resetPassword'         => 'Reset password',
+
+    'iAgreeTo'                      => 'I agree to',
+    'termsOfProcessingPersonalData' => 'the terms of processing personal data',
+
 ];
+	

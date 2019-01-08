@@ -57,4 +57,7 @@ return [
     'forgotYourPassword'    => 'Passwort vergessen?',
     'sendPasswordResetLink' => 'Link zum Zurücksetzen des Passworts senden',
     'resetPassword'         => 'Passwort zurücksetzen',
+
+    'iAgreeTo'                      => 'Ich stimme den',
+    'termsOfProcessingPersonalData' => 'Bedingungen der Verarbeitung personenbezogener Daten zu',
 ];
