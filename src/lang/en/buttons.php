@@ -61,4 +61,3 @@ return [
     'termsOfProcessingPersonalData' => 'the terms of processing personal data',
 
 ];
-	
