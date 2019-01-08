@@ -6,7 +6,6 @@ return [
     'apply'  => 'Sich bewerben',
     'agree'  => 'Genau',
 
-
     'send'   => 'Senden',
     'submit' => 'Senden',
 
