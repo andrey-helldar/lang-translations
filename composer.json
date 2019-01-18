@@ -3,6 +3,7 @@
     "description": "Translation of main messages",
     "type": "library",
     "license": "MIT",
+    "keywords": ["laravel", "languages", "lang", "translations", "messages"],
     "authors": [
         {
             "name": "Andrey Helldar",
