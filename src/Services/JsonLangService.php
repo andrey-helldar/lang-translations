@@ -38,8 +38,8 @@ class JsonLangService extends BaseService
 
     private function processLang($lang)
     {
-        $src = Str::finish($this->path_src . $lang, '/');
-        $dst = Str::finish($this->path_dst, '/');
+        $src = Str::finish($this->path_src . $lang, DIRECTORY_SEPARATOR);
+        $dst = Str::finish($this->path_dst, DIRECTORY_SEPARATOR);
 
         if (!file_exists($src)) {
             $this->error("The source directory for the \"{$lang}\" language was not found");

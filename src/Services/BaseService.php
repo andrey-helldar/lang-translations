@@ -32,8 +32,8 @@ abstract class BaseService implements LangServiceInterface
 
     public function __construct()
     {
-        $this->path_src = str_finish(__DIR__ . '/../lang', '/');
-        $this->path_dst = str_finish(resource_path('lang'), '/');
+        $this->path_src = str_finish(__DIR__ . '/../lang', DIRECTORY_SEPARATOR);
+        $this->path_dst = str_finish(resource_path('lang'), DIRECTORY_SEPARATOR);
     }
 
     public function output(OutputStyle $output)

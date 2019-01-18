@@ -13,17 +13,10 @@ class ArrayLangService extends BaseService
         }
     }
 
-    protected function makeDir($path)
-    {
-        if (!file_exists($path)) {
-            mkdir($path, 0775, true);
-        }
-    }
-
     private function processLang($lang)
     {
-        $src = Str::finish($this->path_src . $lang, '/');
-        $dst = Str::finish($this->path_dst . $lang, '/');
+        $src = Str::finish($this->path_src . $lang, DIRECTORY_SEPARATOR);
+        $dst = Str::finish($this->path_dst . $lang, DIRECTORY_SEPARATOR);
 
         if (!file_exists($src)) {
             $this->error("The source directory for the \"{$lang}\" language was not found");
@@ -41,7 +34,7 @@ class ArrayLangService extends BaseService
 
         foreach (glob($src_path) as $src_file) {
             $basename = pathinfo($src_file, PATHINFO_BASENAME);
-            $filename = $lang . '/' . $basename;
+            $filename = $lang . DIRECTORY_SEPARATOR . $basename;
             $dst_file = $dst . $basename;
 
             if (!is_file($src_file)) {
@@ -53,6 +46,13 @@ class ArrayLangService extends BaseService
             } else {
                 $this->info("The target file \"{$filename}\" exists.");
             }
+        }
+    }
+
+    private function makeDir($path)
+    {
+        if (!file_exists($path)) {
+            mkdir($path, 0775, true);
         }
     }
 }

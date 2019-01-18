@@ -44,9 +44,15 @@ class LangTranslationsUpdate extends Command
      */
     private function getLangDirectories()
     {
-        $dir = scandir(resource_path('lang'));
+        $path = resource_path('lang');
+        $path = str_finish($path, DIRECTORY_SEPARATOR);
+        $dir  = scandir($path);
 
-        return array_filter($dir, function ($item) {
+        return array_filter($dir, function ($item) use ($path) {
+            if (is_file($path . $item)) {
+                return false;
+            }
+
             return !in_array($item, ['.', '..', 'vendor']);
         });
     }
