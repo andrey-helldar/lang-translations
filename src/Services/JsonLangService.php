@@ -8,6 +8,5 @@ class JsonLangService extends BaseService
 
     public function get()
     {
-
     }
 }
