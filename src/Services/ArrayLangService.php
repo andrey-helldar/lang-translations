@@ -13,6 +13,13 @@ class ArrayLangService extends BaseService
         }
     }
 
+    protected function makeDir($path)
+    {
+        if (!file_exists($path)) {
+            mkdir($path, 0775, true);
+        }
+    }
+
     private function processLang($lang)
     {
         $src = Str::finish($this->path_src . $lang, '/');

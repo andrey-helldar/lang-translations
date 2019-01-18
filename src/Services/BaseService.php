@@ -67,13 +67,6 @@ abstract class BaseService implements LangServiceInterface
         return $this;
     }
 
-    protected function makeDir($path)
-    {
-        if (!file_exists($path)) {
-            mkdir($path, 0775, true);
-        }
-    }
-
     protected function copy($src, $dst, $filename)
     {
         $action = file_exists($dst) ? 'replaced' : 'copied';
