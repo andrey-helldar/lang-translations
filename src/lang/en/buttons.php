@@ -34,10 +34,14 @@ return [
     'toBack' => 'To Back',
     'toTop'  => 'To Top',
 
+    'goTo' => 'Go To',
+
     'clear' => 'Clear',
     'today' => 'Today',
 
     'more'    => 'More',
+    'details' => 'Details',
+
     'all'     => 'All',
     'show'    => 'Show',
     'showAll' => 'Show All',

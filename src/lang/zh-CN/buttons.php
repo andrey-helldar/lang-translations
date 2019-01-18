@@ -34,10 +34,14 @@ return [
     'toBack' => '回来',
     'toTop'  => '到达顶点',
 
+    'goTo' => '去',
+
     'clear' => '明确',
     'today' => '今天',
 
     'more'    => '更多',
+    'details' => '细节',
+
     'all'     => '所有',
     'show'    => '节目',
     'showAll' => '显示所有',

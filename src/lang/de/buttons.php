@@ -34,10 +34,14 @@ return [
     'toBack' => 'Unterstützen',
     'toTop'  => 'Nach oben',
 
+    'goTo' => 'Gehe zu',
+
     'clear' => 'Löschen',
     'today' => 'Heute',
 
     'more'    => 'Mehr',
+    'details' => 'Einzelheiten',
+
     'all'     => 'Alle',
     'show'    => 'Zeige',
     'showAll' => 'Zeige alles',
