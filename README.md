@@ -1,6 +1,4 @@
-# Lang Translations Library for Laravel 5.3+
-
-Translation of main messages.
+# Extended lang translations for Laravel 5.3+
 
 ![lang translations](https://user-images.githubusercontent.com/10347617/40197728-f289d00c-5a1c-11e8-877a-7ac379ceb4a2.png)
 
