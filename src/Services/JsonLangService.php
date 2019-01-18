@@ -63,7 +63,6 @@ class JsonLangService extends BaseService
             $trans    = include($src_file);
 
             foreach ($trans as $key => $value) {
-
                 $key = $this->trans_keys->get($key);
                 $this->put($key, $value);
             }
