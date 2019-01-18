@@ -26,7 +26,7 @@ Instead, you may of course manually update your require block and run `composer 
 ```json
 {
     "require": {
-        "andrey-helldar/lang-translations": "^1.1"
+        "andrey-helldar/lang-translations": "^1.4"
     }
 }
 ```
@@ -37,12 +37,6 @@ If you don't use auto-discovery, add the `ServiceProvider` to the providers arra
 Helldar\LangTranslations\ServiceProvider::class,
 ```
 
-You can also publish the config file to change implementations (ie. interface to specific class):
-
-```
-php artisan vendor:publish --provider="Helldar\LangTranslations\ServiceProvider"
-```
-
 
 ## Using
 
@@ -50,12 +44,17 @@ php artisan vendor:publish --provider="Helldar\LangTranslations\ServiceProvider"
 
 The package replaces only certain files in your lang directories:
 
-    buttons.php     // or buttons.json
-    errors.php      // or errors.json
-    forms.php       // or forms.json
-    statuses.php    // or statuses.json
+    resources/lang/<lang>/buttons.php
+    resources/lang/<lang>/errors.php
+    resources/lang/<lang>/forms.php
+    resources/lang/<lang>/statuses.php
+    
+    // or    
+    resources/lang/<lang>.json
 
 He does not touch any other files.
+
+Also, if you select a JSON file type, localization files will be automatically generated from existing translation files. JSON file will be sorted in alphabetical order.
 
 
 ### Install translations
