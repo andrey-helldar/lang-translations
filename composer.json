@@ -1,6 +1,6 @@
 {
     "name": "andrey-helldar/lang-translations",
-    "description": "Translation of main messages",
+    "description": "Extended translation for Laravel",
     "type": "library",
     "license": "MIT",
     "keywords": ["laravel", "languages", "lang", "translations", "messages"],
@@ -12,6 +12,7 @@
     ],
     "suggest": {
         "andrey-helldar/laravel-lang-publisher": "Publisher lang files for the Laravel Framework from caouecs/Laravel-lang",
+        "caouecs/laravel-lang": "List of 68 languages for Laravel 5",
         "symfony/thanks": "Give thanks (in the form of a GitHub) to your fellow PHP package maintainers"
     },
     "require": {
