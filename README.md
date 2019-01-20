@@ -92,9 +92,9 @@ And command for updating json files: `php artisan lang-translations:update --jso
 
 ## Status of files
 
-Check the [TODO.md](TODO.md) file to see the missing translations.
+Check the [TODO](TODO.md) file to see the missing translations.
 
 
 ## Copyright and License
 
-`Lang Translations Library` was written by Andrey Helldar for the Laravel Framework 5.3 and later, and is released under the MIT License. See the [LICENSE](LICENSE) file for details.
+`Lang Translations` was written by Andrey Helldar for the Laravel Framework 5.3 and later, and is released under the MIT License. See the [LICENSE](LICENSE) file for details.
