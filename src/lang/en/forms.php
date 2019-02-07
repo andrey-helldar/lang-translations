@@ -18,6 +18,9 @@ return [
     'caption' => 'Caption',
     'theme'   => 'Theme',
 
+    'file'  => 'File',
+    'files' => 'Files',
+
     'date'       => 'Date',
     'startedAt'  => 'Started At',
     'finishedAt' => 'Finished At',
