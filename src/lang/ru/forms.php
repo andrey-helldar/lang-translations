@@ -18,6 +18,9 @@ return [
     'caption' => 'Заголовок',
     'theme'   => 'Тема',
 
+    'file'  => 'Файл',
+    'files' => 'Файлы',
+
     'date'       => 'Дата',
     'startedAt'  => 'Начнется в',
     'finishedAt' => 'Закончится в',

@@ -7984,8 +7984,6 @@
 ## ru:
 #### forms
 * email : Email
-* file : File
-* files : Files
 
 
 
