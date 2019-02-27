@@ -110,7 +110,7 @@ class JsonLangService extends BaseService
 
         file_put_contents($dst_path, json_encode($items));
 
-        $this->result = new Collection;
+        $this->result = Collection::make();
 
         $this->info("File {$filename} successfully {$action}");
     }

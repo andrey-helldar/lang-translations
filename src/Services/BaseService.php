@@ -4,6 +4,7 @@ namespace Helldar\LangTranslations\Services;
 
 use Helldar\LangTranslations\Interfaces\LangServiceInterface;
 use Illuminate\Console\OutputStyle;
+use Illuminate\Support\Str;
 use Symfony\Component\Console\Output\OutputInterface;
 
 abstract class BaseService implements LangServiceInterface
@@ -32,8 +33,8 @@ abstract class BaseService implements LangServiceInterface
 
     public function __construct()
     {
-        $this->path_src = str_finish(__DIR__ . '/../lang', DIRECTORY_SEPARATOR);
-        $this->path_dst = str_finish(resource_path('lang'), DIRECTORY_SEPARATOR);
+        $this->path_src = Str::finish(__DIR__ . '/../lang', DIRECTORY_SEPARATOR);
+        $this->path_dst = Str::finish(resource_path('lang'), DIRECTORY_SEPARATOR);
     }
 
     public function output(OutputStyle $output)

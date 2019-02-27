@@ -3,6 +3,7 @@
 namespace Helldar\LangTranslations\Console;
 
 use Illuminate\Console\Command;
+use Illuminate\Support\Str;
 
 class LangTranslationsUpdate extends Command
 {
@@ -45,7 +46,7 @@ class LangTranslationsUpdate extends Command
     private function getLangDirectories()
     {
         $path = resource_path('lang');
-        $path = str_finish($path, DIRECTORY_SEPARATOR);
+        $path = Str::finish($path, DIRECTORY_SEPARATOR);
         $dir  = scandir($path);
 
         return array_filter($dir, function ($item) use ($path) {
