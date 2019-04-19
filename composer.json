@@ -31,9 +31,6 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "extra": {
-        "branch-alias": {
-            "1.x": "1.x-dev"
-        },
         "laravel": {
             "providers": [
                 "Helldar\\LangTranslations\\ServiceProvider"
