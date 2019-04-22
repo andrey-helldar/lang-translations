@@ -11,7 +11,16 @@
 
 
 ## ar:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### forms
+* username : Username
+* login : Login
 * file : File
 * files : Files
 
@@ -29,6 +38,13 @@
 [ [to top](#todo-list) ]
 
 ## az:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * prev : Prev
 * hide : Hide
@@ -42,6 +58,8 @@
 * 504 : Gateway Timeout
 
 #### forms
+* username : Username
+* login : Login
 * slug : Slug
 * file : File
 * files : Files
@@ -60,6 +78,13 @@
 [ [to top](#todo-list) ]
 
 ## be:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -185,6 +210,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -255,6 +282,13 @@
 [ [to top](#todo-list) ]
 
 ## bg:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -380,6 +414,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -450,6 +486,13 @@
 [ [to top](#todo-list) ]
 
 ## bn:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -575,6 +618,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -645,6 +690,13 @@
 [ [to top](#todo-list) ]
 
 ## bs:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -770,6 +822,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -840,6 +894,13 @@
 [ [to top](#todo-list) ]
 
 ## ca:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -965,6 +1026,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -1035,6 +1098,13 @@
 [ [to top](#todo-list) ]
 
 ## cs:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -1160,6 +1230,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -1230,6 +1302,13 @@
 [ [to top](#todo-list) ]
 
 ## cy:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -1355,6 +1434,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -1425,6 +1506,13 @@
 [ [to top](#todo-list) ]
 
 ## da:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -1550,6 +1638,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -1620,6 +1710,13 @@
 [ [to top](#todo-list) ]
 
 ## de:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * upgrade : Upgrade
@@ -1636,6 +1733,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fax : Fax
 * slug : Slug
 * file : File
@@ -1657,6 +1756,13 @@
 [ [to top](#todo-list) ]
 
 ## de-CH:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -1782,6 +1888,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -1852,6 +1960,13 @@
 [ [to top](#todo-list) ]
 
 ## el:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -1977,6 +2092,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -2047,6 +2164,13 @@
 [ [to top](#todo-list) ]
 
 ## es:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -2172,6 +2296,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -2242,6 +2368,13 @@
 [ [to top](#todo-list) ]
 
 ## et:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -2367,6 +2500,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -2437,6 +2572,13 @@
 [ [to top](#todo-list) ]
 
 ## eu:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -2562,6 +2704,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -2632,6 +2776,13 @@
 [ [to top](#todo-list) ]
 
 ## fa:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -2757,6 +2908,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -2827,6 +2980,13 @@
 [ [to top](#todo-list) ]
 
 ## fi:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -2952,6 +3112,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -3022,11 +3184,20 @@
 [ [to top](#todo-list) ]
 
 ## fr:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * prev : Prev
 
 #### forms
 * email : Email
+* username : Username
+* login : Login
 * fax : Fax
 * file : File
 * files : Files
@@ -3045,6 +3216,13 @@
 [ [to top](#todo-list) ]
 
 ## gl:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -3170,6 +3348,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -3240,6 +3420,13 @@
 [ [to top](#todo-list) ]
 
 ## he:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -3365,6 +3552,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -3435,6 +3624,13 @@
 [ [to top](#todo-list) ]
 
 ## hi:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -3560,6 +3756,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -3630,6 +3828,13 @@
 [ [to top](#todo-list) ]
 
 ## hr:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -3755,6 +3960,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -3825,6 +4032,13 @@
 [ [to top](#todo-list) ]
 
 ## hu:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -3950,6 +4164,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -4020,6 +4236,13 @@
 [ [to top](#todo-list) ]
 
 ## id:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -4145,6 +4368,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -4215,6 +4440,13 @@
 [ [to top](#todo-list) ]
 
 ## is:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -4340,6 +4572,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -4410,6 +4644,13 @@
 [ [to top](#todo-list) ]
 
 ## it:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -4535,6 +4776,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -4605,6 +4848,13 @@
 [ [to top](#todo-list) ]
 
 ## ja:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -4730,6 +4980,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -4800,6 +5052,13 @@
 [ [to top](#todo-list) ]
 
 ## ka:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -4925,6 +5184,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -4995,6 +5256,13 @@
 [ [to top](#todo-list) ]
 
 ## kk:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -5120,6 +5388,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -5190,6 +5460,13 @@
 [ [to top](#todo-list) ]
 
 ## km:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -5315,6 +5592,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -5385,6 +5664,13 @@
 [ [to top](#todo-list) ]
 
 ## ko:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -5510,6 +5796,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -5580,6 +5868,13 @@
 [ [to top](#todo-list) ]
 
 ## lt:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -5705,6 +6000,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -5775,6 +6072,13 @@
 [ [to top](#todo-list) ]
 
 ## lv:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -5900,6 +6204,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -5970,6 +6276,13 @@
 [ [to top](#todo-list) ]
 
 ## me:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -6095,6 +6408,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -6165,6 +6480,13 @@
 [ [to top](#todo-list) ]
 
 ## mk:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -6290,6 +6612,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -6360,6 +6684,13 @@
 [ [to top](#todo-list) ]
 
 ## mn:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -6485,6 +6816,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -6555,6 +6888,13 @@
 [ [to top](#todo-list) ]
 
 ## ms:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -6680,6 +7020,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -6750,6 +7092,13 @@
 [ [to top](#todo-list) ]
 
 ## nb:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -6875,6 +7224,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -6945,6 +7296,13 @@
 [ [to top](#todo-list) ]
 
 ## ne:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -7070,6 +7428,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -7140,6 +7500,13 @@
 [ [to top](#todo-list) ]
 
 ## nl:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -7265,6 +7632,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -7335,6 +7704,13 @@
 [ [to top](#todo-list) ]
 
 ## nn:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -7460,6 +7836,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -7530,6 +7908,13 @@
 [ [to top](#todo-list) ]
 
 ## pl:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -7655,6 +8040,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -7725,6 +8112,13 @@
 [ [to top](#todo-list) ]
 
 ## pt:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -7850,6 +8244,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -7920,6 +8316,13 @@
 [ [to top](#todo-list) ]
 
 ## pt-BR:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -8045,6 +8448,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -8115,6 +8520,13 @@
 [ [to top](#todo-list) ]
 
 ## ro:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -8240,6 +8652,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -8318,6 +8732,13 @@
 [ [to top](#todo-list) ]
 
 ## sc:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -8443,6 +8864,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -8513,6 +8936,13 @@
 [ [to top](#todo-list) ]
 
 ## sk:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -8638,6 +9068,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -8708,6 +9140,13 @@
 [ [to top](#todo-list) ]
 
 ## sl:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -8833,6 +9272,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -8903,6 +9344,13 @@
 [ [to top](#todo-list) ]
 
 ## sq:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -9028,6 +9476,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -9098,6 +9548,13 @@
 [ [to top](#todo-list) ]
 
 ## sr:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -9223,6 +9680,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -9293,6 +9752,13 @@
 [ [to top](#todo-list) ]
 
 ## sv:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -9418,6 +9884,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -9488,6 +9956,13 @@
 [ [to top](#todo-list) ]
 
 ## sw:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -9613,6 +10088,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -9683,6 +10160,13 @@
 [ [to top](#todo-list) ]
 
 ## tg:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -9808,6 +10292,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -9878,6 +10364,13 @@
 [ [to top](#todo-list) ]
 
 ## th:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -10003,6 +10496,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -10073,6 +10568,13 @@
 [ [to top](#todo-list) ]
 
 ## tk:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -10198,6 +10700,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -10268,6 +10772,13 @@
 [ [to top](#todo-list) ]
 
 ## tl:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -10393,6 +10904,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -10463,6 +10976,13 @@
 [ [to top](#todo-list) ]
 
 ## tr:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -10588,6 +11108,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -10658,6 +11180,13 @@
 [ [to top](#todo-list) ]
 
 ## ug:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -10783,6 +11312,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -10853,6 +11384,13 @@
 [ [to top](#todo-list) ]
 
 ## uk:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -10978,6 +11516,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -11048,6 +11588,13 @@
 [ [to top](#todo-list) ]
 
 ## ur:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -11173,6 +11720,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -11243,6 +11792,13 @@
 [ [to top](#todo-list) ]
 
 ## uz-cyrillic:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -11368,6 +11924,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -11438,6 +11996,13 @@
 [ [to top](#todo-list) ]
 
 ## uz-latin:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -11563,6 +12128,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -11633,6 +12200,13 @@
 [ [to top](#todo-list) ]
 
 ## vi:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -11758,6 +12332,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -11828,7 +12404,16 @@
 [ [to top](#todo-list) ]
 
 ## zh-CN:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### forms
+* username : Username
+* login : Login
 * slug : Slug
 * file : File
 * files : Files
@@ -11847,6 +12432,13 @@
 [ [to top](#todo-list) ]
 
 ## zh-HK:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -11972,6 +12564,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
@@ -12042,6 +12636,13 @@
 [ [to top](#todo-list) ]
 
 ## zh-TW:
+#### auth
+* verifyEmail : Verify Your Email Address
+* verifyFresh : A fresh verification link has been sent to your email address.
+* checkEmailVerifyLink : Before proceeding, please check your email for a verification link.
+* ifYouNotReceiveEmail : If you did not receive the email
+* clickHereToRequestAnother : click here to request another
+
 #### buttons
 * ok : OK
 * cancel : Cancel
@@ -12167,6 +12768,8 @@
 #### forms
 * email : Email
 * name : Name
+* username : Username
+* login : Login
 * fullName : Full Name
 * firstName : First Name
 * lastName : Last Name
