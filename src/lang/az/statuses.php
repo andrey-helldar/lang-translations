@@ -20,6 +20,14 @@ return [
     'updated'  => 'Yenilənib',
     'deleted'  => 'Silindi',
     'restored' => 'Bərpa edildi',
+    'finished' => 'Finished',
+
+    'createdAt'  => 'Created At',
+    'storedAt'   => 'Stored At',
+    'updatedAt'  => 'Updated At',
+    'deletedAt'  => 'Deleted At',
+    'restoredAt' => 'Restored At',
+    'finishedAt' => 'Finished At',
 
     'notFound'        => 'Tapılmadı',
     'dataNotFound'    => 'Məlumatlar tapılmadı',

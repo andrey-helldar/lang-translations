@@ -20,6 +20,14 @@ return [
     'updated'  => '更新',
     'deleted'  => '删除',
     'restored' => '恢复',
+    'finished' => 'Finished',
+
+    'createdAt'  => 'Created At',
+    'storedAt'   => 'Stored At',
+    'updatedAt'  => 'Updated At',
+    'deletedAt'  => 'Deleted At',
+    'restoredAt' => 'Restored At',
+    'finishedAt' => 'Finished At',
 
     'notFound'        => '未找到',
     'dataNotFound'    => '找不到数据',

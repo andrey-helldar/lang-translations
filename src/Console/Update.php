@@ -5,7 +5,7 @@ namespace Helldar\LangTranslations\Console;
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
 
-class LangTranslationsUpdate extends Command
+class Update extends Command
 {
     /**
      * The name and signature of the console command.
