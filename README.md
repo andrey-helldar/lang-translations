@@ -26,10 +26,15 @@ Instead, you may of course manually update your require block and run `composer 
 ```json
 {
     "require": {
-        "andrey-helldar/lang-translations": "^1.4"
+        "andrey-helldar/lang-translations": "^2.0"
     }
 }
 ```
+
+For using package in the Laravel 5.3-5.5 (php >= 5.6.0 <=7.1.2), use `^1.0` version.
+
+For using package in the Laravel 5.5-5.x (php >= 7.1.3), use `^2.0` version (default).
+
 
 If you don't use auto-discovery, add the `ServiceProvider` to the providers array in `config/app.php`:
 
@@ -44,6 +49,7 @@ Helldar\LangTranslations\ServiceProvider::class,
 
 The package replaces only certain files in your lang directories:
 
+    resources/lang/<lang>/auth.php
     resources/lang/<lang>/buttons.php
     resources/lang/<lang>/errors.php
     resources/lang/<lang>/forms.php
@@ -53,6 +59,8 @@ The package replaces only certain files in your lang directories:
     resources/lang/<lang>.json
 
 He does not touch any other files.
+
+When updating, the package reads your changes in the files and adds them to your own. This means that if you fill in the files yourself, the package will not remove anything from them.
 
 Also, if you select a JSON file type, localization files will be automatically generated from existing translation files. JSON file will be sorted in alphabetical order.
 

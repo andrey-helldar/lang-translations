@@ -17,19 +17,9 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
      */
     public function boot()
     {
-        if ($this->app->runningInConsole()) {
-            $this->commands([
-                Install::class,
-                Update::class,
-            ]);
-        }
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function register()
-    {
-        //
+        $this->commands([
+            Install::class,
+            Update::class,
+        ]);
     }
 }

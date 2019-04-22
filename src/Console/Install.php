@@ -15,11 +15,6 @@ class Install extends Command
 
     protected $description = 'Install translations files.';
 
-    public function __construct()
-    {
-        parent::__construct();
-    }
-
     public function handle()
     {
         $lang    = (array) $this->argument('lang');

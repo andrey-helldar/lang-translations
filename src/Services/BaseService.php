@@ -3,8 +3,9 @@
 namespace Helldar\LangTranslations\Services;
 
 use Helldar\LangTranslations\Interfaces\LangServiceInterface;
+use Helldar\Support\Facades\Arr;
+use Helldar\Support\Facades\Str;
 use Illuminate\Console\OutputStyle;
-use Illuminate\Support\Str;
 use Symfony\Component\Console\Output\OutputInterface;
 
 abstract class BaseService implements LangServiceInterface
@@ -34,7 +35,7 @@ abstract class BaseService implements LangServiceInterface
     public function __construct()
     {
         $this->path_src = Str::finish(__DIR__ . '/../lang', DIRECTORY_SEPARATOR);
-        $this->path_dst = Str::finish(resource_path('lang'), DIRECTORY_SEPARATOR);
+        $this->path_dst = Str::finish(\resource_path('lang'), DIRECTORY_SEPARATOR);
     }
 
     public function output(OutputStyle $output)
@@ -49,9 +50,9 @@ abstract class BaseService implements LangServiceInterface
      *
      * @return $this
      */
-    public function lang($values = [])
+    public function lang(array $values = [])
     {
-        $this->lang = (array) $values;
+        $this->lang = $values;
 
         return $this;
     }
@@ -61,24 +62,25 @@ abstract class BaseService implements LangServiceInterface
      *
      * @return $this
      */
-    public function force($value = false)
+    public function force(bool $value = false)
     {
-        $this->force = (bool) $value;
+        $this->force = $value;
 
         return $this;
     }
 
     protected function copy($src, $dst, $filename)
     {
-        $action = file_exists($dst) ? 'replaced' : 'copied';
+        $action = \file_exists($dst) ? 'replaced' : 'copied';
 
-        if (copy($src, $dst)) {
-            $this->info("File {$filename} successfully {$action}");
+        $source = \file_exists($src) ? require $src : [];
+        $target = \file_exists($dst) ? require $dst : [];
 
-            return;
-        }
+        $source = \array_merge($target, $source);
 
-        $this->error("Error {$action} {$filename} file");
+        Arr::store($source, $dst);
+
+        $this->info("File {$filename} successfully {$action}");
     }
 
     protected function line($string, $style = null)
