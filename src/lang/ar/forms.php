@@ -4,6 +4,9 @@ return [
     'email' => 'البريد الإلكتروني',
     'name'  => 'اسم',
 
+    'username' => 'Username',
+    'login'    => 'Login',
+
     'fullName'  => 'الاسم الكامل',
     'firstName' => 'الاسم الاول',
     'lastName'  => 'الكنية',

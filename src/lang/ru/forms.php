@@ -4,6 +4,9 @@ return [
     'email' => 'Email',
     'name'  => 'Имя',
 
+    'username' => 'Никнейм',
+    'login'    => 'Логин',
+
     'fullName'  => 'Полное имя',
     'firstName' => 'Имя',
     'lastName'  => 'Фамилия',

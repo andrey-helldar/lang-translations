@@ -4,6 +4,9 @@ return [
     'email' => 'E-poçt',
     'name'  => 'Adı',
 
+    'username' => 'Username',
+    'login'    => 'Login',
+
     'fullName'  => 'Tam adı',
     'firstName' => 'Adı',
     'lastName'  => 'Soyad',
