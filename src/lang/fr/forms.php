@@ -4,6 +4,9 @@ return [
     'email' => 'Email',
     'name'  => 'Prénom',
 
+    'username' => 'Username',
+    'login'    => 'Login',
+
     'fullName'  => 'Nom complet',
     'firstName' => 'Prénom',
     'lastName'  => 'Nom de famille',

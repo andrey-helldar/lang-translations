@@ -4,6 +4,9 @@ return [
     'email' => '电子邮件',
     'name'  => '名称',
 
+    'username' => 'Username',
+    'login'    => 'Login',
+
     'fullName'  => '全名',
     'firstName' => '名字',
     'lastName'  => '姓',
