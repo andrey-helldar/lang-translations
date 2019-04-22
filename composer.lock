@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8e411083be639c69db64e4c35704c73c",
+    "content-hash": "f6d6c4d45477fc7971c07f9a12a085b8",
     "packages": [
         {
             "name": "andrey-helldar/support",
-            "version": "v1.4.0",
+            "version": "v1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andrey-helldar/support.git",
-                "reference": "90026f93074d014b50dec735c1f6e8372799f5af"
+                "reference": "4648d76fbeaafd36a330295d00c096feb2fe04f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andrey-helldar/support/zipball/90026f93074d014b50dec735c1f6e8372799f5af",
-                "reference": "90026f93074d014b50dec735c1f6e8372799f5af",
+                "url": "https://api.github.com/repos/andrey-helldar/support/zipball/4648d76fbeaafd36a330295d00c096feb2fe04f5",
+                "reference": "4648d76fbeaafd36a330295d00c096feb2fe04f5",
                 "shasum": ""
             },
             "require": {
@@ -72,7 +72,7 @@
                 "yii",
                 "yii2"
             ],
-            "time": "2019-04-22T11:56:29+00:00"
+            "time": "2019-04-22T14:43:32+00:00"
         },
         {
             "name": "doctrine/inflector",
