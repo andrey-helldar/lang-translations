@@ -21,19 +21,6 @@ class Update extends Command
      */
     protected $description = 'Update translations files.';
 
-    /**
-     * Create a new command instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        parent::__construct();
-    }
-
-    /**
-     * Execute the console command.
-     */
     public function handle()
     {
         $lang = $this->getLangDirectories();
