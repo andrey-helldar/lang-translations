@@ -20,6 +20,14 @@ return [
     'updated'  => 'Updated',
     'deleted'  => 'Deleted',
     'restored' => 'Restored',
+    'finished' => 'Finished',
+
+    'createdAt'  => 'Created At',
+    'storedAt'   => 'Stored At',
+    'updatedAt'  => 'Updated At',
+    'deletedAt'  => 'Deleted At',
+    'restoredAt' => 'Restored At',
+    'finishedAt' => 'Finished At',
 
     'notFound'        => 'Not Found',
     'dataNotFound'    => 'Data Not Found',

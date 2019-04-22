@@ -20,6 +20,14 @@ return [
     'updated'  => 'Обновлено',
     'deleted'  => 'Удалено',
     'restored' => 'Восстановлено',
+    'finished' => 'Завершено',
+
+    'createdAt'  => 'Создано',
+    'storedAt'   => 'Создано',
+    'updatedAt'  => 'Обновлено',
+    'deletedAt'  => 'Удалено',
+    'restoredAt' => 'Восстановлено',
+    'finishedAt' => 'Завершено',
 
     'notFound'        => 'Не найдено',
     'dataNotFound'    => 'Данные не найдены',

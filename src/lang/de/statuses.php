@@ -20,6 +20,14 @@ return [
     'updated'  => 'Aktualisiert',
     'deleted'  => 'Gelöscht',
     'restored' => 'Restauriert',
+    'finished' => 'Finished',
+
+    'createdAt'  => 'Created At',
+    'storedAt'   => 'Stored At',
+    'updatedAt'  => 'Updated At',
+    'deletedAt'  => 'Deleted At',
+    'restoredAt' => 'Restored At',
+    'finishedAt' => 'Finished At',
 
     'notFound'        => 'Nicht gefunden',
     'dataNotFound'    => 'Daten nicht gefunden',

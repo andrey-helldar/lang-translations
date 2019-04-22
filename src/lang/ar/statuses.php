@@ -20,6 +20,14 @@ return [
     'updated'  => 'محدث',
     'deleted'  => 'تم الحذف',
     'restored' => 'رمم',
+    'finished' => 'Finished',
+
+    'createdAt'  => 'Created At',
+    'storedAt'   => 'Stored At',
+    'updatedAt'  => 'Updated At',
+    'deletedAt'  => 'Deleted At',
+    'restoredAt' => 'Restored At',
+    'finishedAt' => 'Finished At',
 
     'notFound'        => 'غير معثور عليه',
     'dataNotFound'    => 'لم يتم العثور على بيانات',
