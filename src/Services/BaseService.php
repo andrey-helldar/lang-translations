@@ -78,7 +78,7 @@ abstract class BaseService implements LangServiceInterface
 
         $source = \array_merge($target, $source);
 
-        Arr::store($source, $dst);
+        Arr::storeAsArray($source, $dst, true);
 
         $this->info("File {$filename} successfully {$action}");
     }

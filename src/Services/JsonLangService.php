@@ -133,7 +133,7 @@ class JsonLangService extends BaseService
 
         \ksort($this->result);
 
-        Arr::storeAsJson($this->result, $dst_path);
+        Arr::storeAsJson($this->result, $dst_path, true);
 
         $this->info("File {$filename} successfully {$action}");
     }
