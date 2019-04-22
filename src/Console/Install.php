@@ -6,7 +6,7 @@ use Helldar\LangTranslations\Services\ArrayLangService;
 use Helldar\LangTranslations\Services\JsonLangService;
 use Illuminate\Console\Command;
 
-class LangTranslationsInstall extends Command
+class Install extends Command
 {
     protected $signature = 'lang-translations:install' .
     ' {lang* : Lang files to copy}' .

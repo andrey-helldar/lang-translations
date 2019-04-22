@@ -2,8 +2,8 @@
 
 namespace Helldar\LangTranslations;
 
-use Helldar\LangTranslations\Console\LangTranslationsInstall;
-use Helldar\LangTranslations\Console\LangTranslationsUpdate;
+use Helldar\LangTranslations\Console\Install;
+use Helldar\LangTranslations\Console\Update;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
@@ -19,8 +19,8 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
-                LangTranslationsInstall::class,
-                LangTranslationsUpdate::class,
+                Install::class,
+                Update::class,
             ]);
         }
     }
