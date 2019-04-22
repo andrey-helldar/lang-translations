@@ -4,8 +4,76 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "323f80c7aa95cb7bb9b5a87a691cd7e0",
+    "content-hash": "8e411083be639c69db64e4c35704c73c",
     "packages": [
+        {
+            "name": "andrey-helldar/support",
+            "version": "v1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andrey-helldar/support.git",
+                "reference": "90026f93074d014b50dec735c1f6e8372799f5af"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andrey-helldar/support/zipball/90026f93074d014b50dec735c1f6e8372799f5af",
+                "reference": "90026f93074d014b50dec735c1f6e8372799f5af",
+                "shasum": ""
+            },
+            "require": {
+                "ext-bcmath": "*",
+                "ext-dom": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": "^7.1.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.5|^8.0"
+            },
+            "suggest": {
+                "illuminate/database": "For using methods from the Dumper class in Laravel framework",
+                "symfony/thanks": "Give thanks (in the form of a GitHub) to your fellow PHP package maintainers"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Helldar\\Support\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Helldar\\Support\\": "src/"
+                },
+                "files": [
+                    "src/helpers/digit.php",
+                    "src/helpers/dumper.php",
+                    "src/helpers/http.php",
+                    "src/helpers/strings.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andrey Helldar",
+                    "email": "helldar@ai-rus.com"
+                }
+            ],
+            "description": "Support package is a collection of helpers and tools for projects.",
+            "keywords": [
+                "framework",
+                "laravel",
+                "support",
+                "symfony",
+                "yii",
+                "yii2"
+            ],
+            "time": "2019-04-22T11:56:29+00:00"
+        },
         {
             "name": "doctrine/inflector",
             "version": "v1.3.0",
@@ -717,7 +785,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.6.9",
+        "php": "^7.1.3",
         "ext-json": "*"
     },
     "platform-dev": []

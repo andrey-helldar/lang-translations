@@ -2,29 +2,31 @@
 
 namespace Helldar\LangTranslations\Services;
 
-use Illuminate\Support\Str;
+use Helldar\Support\Facades\File;
+use Helldar\Support\Facades\Str;
 
 class ArrayLangService extends BaseService
 {
     public function get()
     {
-        foreach ($this->lang as $lang) {
+        \array_map(function ($lang) {
             $this->processLang($lang);
-        }
+        }, $this->lang);
     }
 
     private function processLang($lang)
     {
-        $src = Str::finish($this->path_src . $lang, DIRECTORY_SEPARATOR);
-        $dst = Str::finish($this->path_dst . $lang, DIRECTORY_SEPARATOR);
+        $src = Str::finish($this->path_src . $lang);
+        $dst = Str::finish($this->path_dst . $lang);
 
-        if (!file_exists($src)) {
+        if (!\file_exists($src)) {
             $this->error("The source directory for the \"{$lang}\" language was not found");
 
             return;
         }
 
-        $this->makeDir($dst);
+        File::makeDirectory($dst);
+
         $this->processFile($src, $dst, $lang);
     }
 
@@ -32,27 +34,20 @@ class ArrayLangService extends BaseService
     {
         $src_path = $src . '*.php';
 
-        foreach (glob($src_path) as $src_file) {
-            $basename = pathinfo($src_file, PATHINFO_BASENAME);
+        foreach (\glob($src_path) as $src_file) {
+            $basename = \pathinfo($src_file, PATHINFO_BASENAME);
             $filename = $lang . DIRECTORY_SEPARATOR . $basename;
             $dst_file = $dst . $basename;
 
-            if (!is_file($src_file)) {
+            if (!\is_file($src_file)) {
                 continue;
             }
 
-            if ($this->force || !file_exists($dst_file)) {
+            if ($this->force || !\file_exists($dst_file)) {
                 $this->copy($src_file, $dst_file, $filename);
             } else {
                 $this->info("The target file \"{$filename}\" exists.");
             }
-        }
-    }
-
-    private function makeDir($path)
-    {
-        if (!file_exists($path)) {
-            mkdir($path, 0775, true);
         }
     }
 }
