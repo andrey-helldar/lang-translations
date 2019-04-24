@@ -76,7 +76,7 @@ abstract class BaseService implements LangServiceInterface
         $source = \file_exists($src) ? require $src : [];
         $target = \file_exists($dst) ? require $dst : [];
 
-        $source = \array_merge($target, $source);
+        $source = Arr::merge($target, $source);
 
         Arr::storeAsArray($source, $dst, true);
 

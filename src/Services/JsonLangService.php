@@ -51,8 +51,7 @@ class JsonLangService extends BaseService
                 continue;
             }
 
-            $basename = \pathinfo($src_file, PATHINFO_FILENAME);
-            $target   = [];
+            $target = [];
 
             if (\file_exists($dst_path)) {
                 $content = \file_get_contents($dst_path);
@@ -114,9 +113,7 @@ class JsonLangService extends BaseService
 
     private function merge(array &$source, $array = [])
     {
-        foreach ($array as $key => $value) {
-            $source[$key] = $value;
-        }
+        $source = Arr::merge($source, $array);
     }
 
     private function store($dst, $lang)
