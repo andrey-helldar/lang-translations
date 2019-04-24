@@ -113,9 +113,7 @@ class JsonLangService extends BaseService
 
     private function merge(array &$source, $array = [])
     {
-        foreach ($array as $key => $value) {
-            $source[$key] = $value;
-        }
+        $source = Arr::merge($source, $array);
     }
 
     private function store($dst, $lang)
