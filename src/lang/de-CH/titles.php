@@ -4,5 +4,7 @@ return [
     'active'   => 'Active',
     'deleted'  => 'Deleted',
     'finished' => 'Finished',
-    'trash'    => 'Trash',
+
+    'trash'   => 'Trash',
+    'trashed' => 'Trashed',
 ];
