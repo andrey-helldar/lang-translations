@@ -29,6 +29,13 @@ return [
     'restoredAt' => 'Restored At',
     'finishedAt' => 'Finished At',
 
+    'willBeCreatedAt'  => 'Will Be Created At',
+    'willBeStoredAt'   => 'Will Be Stored At',
+    'willBeUpdatedAt'  => 'Will Be Updated At',
+    'willBeDeletedAt'  => 'Will Be Deleted At',
+    'willBeRestoredAt' => 'Will Be Restored At',
+    'willBeFinishedAt' => 'Will Be Finished At',
+
     'notFound'        => 'غير معثور عليه',
     'dataNotFound'    => 'لم يتم العثور على بيانات',
     'itemsNotFound'   => 'العناصر غير موجودة',

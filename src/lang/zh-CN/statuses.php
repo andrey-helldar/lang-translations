@@ -29,6 +29,13 @@ return [
     'restoredAt' => 'Restored At',
     'finishedAt' => 'Finished At',
 
+    'willBeCreatedAt'  => 'Will Be Created At',
+    'willBeStoredAt'   => 'Will Be Stored At',
+    'willBeUpdatedAt'  => 'Will Be Updated At',
+    'willBeDeletedAt'  => 'Will Be Deleted At',
+    'willBeRestoredAt' => 'Will Be Restored At',
+    'willBeFinishedAt' => 'Will Be Finished At',
+
     'notFound'        => '未找到',
     'dataNotFound'    => '找不到数据',
     'itemsNotFound'   => '找不到物品',
