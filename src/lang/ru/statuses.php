@@ -29,6 +29,13 @@ return [
     'restoredAt' => 'Восстановлено',
     'finishedAt' => 'Завершено',
 
+    'willBeCreatedAt'  => 'Будет создано в',
+    'willBeStoredAt'   => 'Будет создано в',
+    'willBeUpdatedAt'  => 'Будет обновлено в',
+    'willBeDeletedAt'  => 'Будет удалено в',
+    'willBeRestoredAt' => 'Будет восстановлено в',
+    'willBeFinishedAt' => 'Будет завершено в',
+
     'notFound'        => 'Не найдено',
     'dataNotFound'    => 'Данные не найдены',
     'itemsNotFound'   => 'Элементы не найдены',

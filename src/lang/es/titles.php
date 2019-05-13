@@ -7,4 +7,7 @@ return [
 
     'trash'   => 'Trash',
     'trashed' => 'Trashed',
+
+    'action'  => 'Action',
+    'actions' => 'Actions',
 ];
