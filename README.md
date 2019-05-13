@@ -54,6 +54,7 @@ The package replaces only certain files in your lang directories:
     resources/lang/<lang>/errors.php
     resources/lang/<lang>/forms.php
     resources/lang/<lang>/statuses.php
+    resources/lang/<lang>/titles.php
     
     // or    
     resources/lang/<lang>.json
