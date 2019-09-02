@@ -51,6 +51,9 @@ return [
     'openMenu'  => '打开菜单',
     'closeMenu' => '关闭菜单',
 
+    'open'  => 'Open',
+    'close' => 'Close',
+
     'login'  => '登录',
     'logout' => '登出',
 

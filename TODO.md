@@ -63,6 +63,8 @@
 #### buttons
 * prev : Prev
 * hide : Hide
+* open : Open
+* close : Close
 
 #### errors
 * 207 : Multi-Status
@@ -153,6 +155,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -372,6 +376,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -591,6 +597,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -810,6 +818,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -1029,6 +1039,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -1248,6 +1260,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -1467,6 +1481,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -1686,6 +1702,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -1871,6 +1889,8 @@
 * ok : OK
 * upgrade : Upgrade
 * filter : Filter
+* open : Open
+* close : Close
 
 #### errors
 * 101 : Switching Protocols
@@ -1966,6 +1986,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -2185,6 +2207,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -2404,6 +2428,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -2623,6 +2649,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -2842,6 +2870,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -3061,6 +3091,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -3280,6 +3312,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -3463,6 +3497,8 @@
 
 #### buttons
 * prev : Prev
+* open : Open
+* close : Close
 
 #### forms
 * email : Email
@@ -3546,6 +3582,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -3765,6 +3803,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -3984,6 +4024,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -4203,6 +4245,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -4422,6 +4466,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -4641,6 +4687,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -4860,6 +4908,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -5079,6 +5129,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -5298,6 +5350,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -5517,6 +5571,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -5736,6 +5792,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -5955,6 +6013,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -6174,6 +6234,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -6393,6 +6455,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -6612,6 +6676,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -6831,6 +6897,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -7050,6 +7118,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -7269,6 +7339,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -7488,6 +7560,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -7707,6 +7781,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -7926,6 +8002,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -8145,6 +8223,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -8364,6 +8444,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -8583,6 +8665,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -8802,6 +8886,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -9021,6 +9107,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -9240,6 +9328,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -9467,6 +9557,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -9686,6 +9778,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -9905,6 +9999,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -10124,6 +10220,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -10343,6 +10441,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -10562,6 +10662,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -10781,6 +10883,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -11000,6 +11104,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -11219,6 +11325,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -11438,6 +11546,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -11657,6 +11767,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -11876,6 +11988,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -12095,6 +12209,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -12314,6 +12430,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -12533,6 +12651,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -12752,6 +12872,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -12971,6 +13093,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -13190,6 +13314,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -13371,6 +13497,10 @@
 * ifYouNotReceiveEmail : If you did not receive the email
 * clickHereToRequestAnother : click here to request another
 
+#### buttons
+* open : Open
+* close : Close
+
 #### forms
 * username : Username
 * login : Login
@@ -13452,6 +13582,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In
@@ -13671,6 +13803,8 @@
 * hideAll : Hide All
 * openMenu : Open Menu
 * closeMenu : Close Menu
+* open : Open
+* close : Close
 * login : Login
 * logout : Logout
 * signIn : Sign In

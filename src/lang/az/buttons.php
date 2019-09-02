@@ -51,6 +51,9 @@ return [
     'openMenu'  => 'Menyu açın',
     'closeMenu' => 'Menyu yandırın',
 
+    'open'  => 'Open',
+    'close' => 'Close',
+
     'login'  => 'Daxil ol',
     'logout' => 'Çıxış',
 
