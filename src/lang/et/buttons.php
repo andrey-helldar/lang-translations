@@ -51,6 +51,9 @@ return [
     'openMenu'  => 'Open Menu',
     'closeMenu' => 'Close Menu',
 
+    'open'  => 'Open',
+    'close' => 'Close',
+
     'login'  => 'Login',
     'logout' => 'Logout',
 

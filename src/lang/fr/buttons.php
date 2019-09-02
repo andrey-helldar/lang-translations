@@ -51,6 +51,9 @@ return [
     'openMenu'  => 'Ouvrir le menu',
     'closeMenu' => 'Fermer le menu',
 
+    'open'  => 'Open',
+    'close' => 'Close',
+
     'login'  => 'S\'identifier',
     'logout' => 'Connectez - Out',
 
