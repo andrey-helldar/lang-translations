@@ -6,6 +6,8 @@ return [
     'apply'  => 'Apply',
     'agree'  => 'I agree',
 
+    'add' => 'Add',
+
     'send'   => 'Send',
     'submit' => 'Submit',
 
