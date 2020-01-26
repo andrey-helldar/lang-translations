@@ -45,7 +45,7 @@ class TodoGenerator
                 return false;
             }
 
-            return ! in_array($item, ['.', '..', 'vendor', $this->default_lang]);
+            return !in_array($item, ['.', '..', 'vendor', $this->default_lang]);
         });
     }
 
@@ -55,7 +55,7 @@ class TodoGenerator
         $src_path = $this->finish($path, '/') . '*';
 
         foreach (glob($src_path) as $src_file) {
-            if (! is_file($src_file)) {
+            if (!is_file($src_file)) {
                 continue;
             }
 
@@ -72,7 +72,7 @@ class TodoGenerator
             $src_path = $this->base_path . $language . '/*.php';
 
             foreach (glob($src_path) as $src_file) {
-                if (! is_file($src_file)) {
+                if (!is_file($src_file)) {
                     continue;
                 }
 
@@ -87,7 +87,7 @@ class TodoGenerator
     protected function compare($language, $filename, $trans = [])
     {
         foreach ($this->trans[$filename] as $default_key => $default_value) {
-            if (! array_key_exists($default_key, $trans)) {
+            if (!array_key_exists($default_key, $trans)) {
                 $this->output[$language][$filename][$default_key] = $default_value;
 
                 continue;

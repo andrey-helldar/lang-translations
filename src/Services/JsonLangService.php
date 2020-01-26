@@ -32,7 +32,7 @@ class JsonLangService extends BaseService
         $src = Str::finish($this->path_src . $lang);
         $dst = Str::finish($this->path_dst);
 
-        if (! \file_exists($src)) {
+        if (!\file_exists($src)) {
             $this->error("The source directory for the \"{$lang}\" language was not found");
 
             return;
@@ -54,7 +54,7 @@ class JsonLangService extends BaseService
         $dst_path = $dst . $lang . '.json';
 
         foreach (\glob($src_path) as $src_file) {
-            if (! \is_file($src_file)) {
+            if (!\is_file($src_file)) {
                 continue;
             }
 
@@ -116,7 +116,7 @@ class JsonLangService extends BaseService
 
     protected function put($key = null, $value = null)
     {
-        if (! \is_null($key) && ! \is_null($value)) {
+        if (!\is_null($key) && !\is_null($value)) {
             $this->result[$key] = $value;
         }
     }
@@ -132,7 +132,7 @@ class JsonLangService extends BaseService
         $filename = $lang . '.json';
         $dst_path = $dst . $filename;
 
-        if (! $this->force) {
+        if (!$this->force) {
             $this->error("File {$filename} already exists!");
 
             return;
