@@ -2,13 +2,13 @@
 
 namespace Helldar\LangTranslations\Services;
 
-use Helldar\LangTranslations\Interfaces\LangServiceInterface;
+use Helldar\LangTranslations\Contracts\LangContract;
 use Helldar\Support\Facades\Arr;
 use Helldar\Support\Facades\Str;
 use Illuminate\Console\OutputStyle;
 use Symfony\Component\Console\Output\OutputInterface;
 
-abstract class BaseService implements LangServiceInterface
+abstract class BaseService implements LangContract
 {
     /** @var string */
     protected $path_src;

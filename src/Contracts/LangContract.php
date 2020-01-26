@@ -1,10 +1,10 @@
 <?php
 
-namespace Helldar\LangTranslations\Interfaces;
+namespace Helldar\LangTranslations\Contracts;
 
 use Illuminate\Console\OutputStyle;
 
-interface LangServiceInterface
+interface LangContract
 {
     public function output(OutputStyle $output);
 
