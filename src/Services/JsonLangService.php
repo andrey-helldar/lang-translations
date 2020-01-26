@@ -27,7 +27,7 @@ class JsonLangService extends BaseService
         }
     }
 
-    private function processLang($lang)
+    protected function processLang($lang)
     {
         $src = Str::finish($this->path_src . $lang);
         $dst = Str::finish($this->path_dst);
@@ -48,7 +48,7 @@ class JsonLangService extends BaseService
      *
      * @throws \Helldar\PrettyArray\Exceptions\FileDoesntExistsException
      */
-    private function processFile($src, $dst, $lang)
+    protected function processFile($src, $dst, $lang)
     {
         $src_path = $src . '*.php';
         $dst_path = $dst . $lang . '.json';
@@ -77,7 +77,7 @@ class JsonLangService extends BaseService
     /**
      * @throws \Helldar\PrettyArray\Exceptions\FileDoesntExistsException
      */
-    private function getTransKeys()
+    protected function getTransKeys()
     {
         $src_path = \sprintf('%s%s/*.php', $this->path_src, $this->default_lang);
 
@@ -88,7 +88,7 @@ class JsonLangService extends BaseService
         }
     }
 
-    private function loadResult()
+    protected function loadResult()
     {
         foreach ($this->lang as $lang) {
             $path = \resource_path("lang/{$lang}.json");
@@ -104,7 +104,7 @@ class JsonLangService extends BaseService
         }
     }
 
-    private function putSource(array $array, array $keys)
+    protected function putSource(array $array, array $keys)
     {
         foreach ($array as $key => $value) {
             $key   = $keys[$key] ?? null;
@@ -114,14 +114,14 @@ class JsonLangService extends BaseService
         }
     }
 
-    private function put($key = null, $value = null)
+    protected function put($key = null, $value = null)
     {
         if (! \is_null($key) && ! \is_null($value)) {
             $this->result[$key] = $value;
         }
     }
 
-    private function merge(array &$source, $array = [])
+    protected function merge(array &$source, $array = [])
     {
         $source = Arr::merge($source, $array);
     }

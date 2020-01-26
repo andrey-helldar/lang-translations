@@ -18,7 +18,7 @@ class Update extends Command
         $this->install($lang);
     }
 
-    private function getLangDirectories(): array
+    protected function getLangDirectories(): array
     {
         $path = \resource_path('lang');
         $path = Str::finish($path, DIRECTORY_SEPARATOR);
@@ -33,7 +33,7 @@ class Update extends Command
         });
     }
 
-    private function install($lang = 'en')
+    protected function install($lang = 'en')
     {
         $this->call('lang-translations:install', [
             'lang'    => $lang,

@@ -36,7 +36,7 @@ class TodoGenerator
         file_put_contents($path, $this->getOutput());
     }
 
-    private function loadLanguages()
+    protected function loadLanguages()
     {
         $dir = scandir($this->base_path);
 
@@ -45,17 +45,17 @@ class TodoGenerator
                 return false;
             }
 
-            return !in_array($item, ['.', '..', 'vendor', $this->default_lang]);
+            return ! in_array($item, ['.', '..', 'vendor', $this->default_lang]);
         });
     }
 
-    private function loadDefaultLanguage()
+    protected function loadDefaultLanguage()
     {
         $path     = realpath($this->base_path . $this->default_lang);
         $src_path = $this->finish($path, '/') . '*';
 
         foreach (glob($src_path) as $src_file) {
-            if (!is_file($src_file)) {
+            if (! is_file($src_file)) {
                 continue;
             }
 
@@ -66,13 +66,13 @@ class TodoGenerator
         }
     }
 
-    private function getTranslations()
+    protected function getTranslations()
     {
         foreach ($this->languages as $language) {
             $src_path = $this->base_path . $language . '/*.php';
 
             foreach (glob($src_path) as $src_file) {
-                if (!is_file($src_file)) {
+                if (! is_file($src_file)) {
                     continue;
                 }
 
@@ -84,10 +84,10 @@ class TodoGenerator
         }
     }
 
-    private function compare($language, $filename, $trans = [])
+    protected function compare($language, $filename, $trans = [])
     {
         foreach ($this->trans[$filename] as $default_key => $default_value) {
-            if (!array_key_exists($default_key, $trans)) {
+            if (! array_key_exists($default_key, $trans)) {
                 $this->output[$language][$filename][$default_key] = $default_value;
 
                 continue;
@@ -99,7 +99,7 @@ class TodoGenerator
         }
     }
 
-    private function getOutput()
+    protected function getOutput()
     {
         $output = "# Todo list\n\n";
 
@@ -146,7 +146,7 @@ class TodoGenerator
         return $output;
     }
 
-    private function finish($value, $cap)
+    protected function finish($value, $cap)
     {
         $quoted = preg_quote($cap, '/');
 

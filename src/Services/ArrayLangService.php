@@ -14,7 +14,7 @@ class ArrayLangService extends BaseService
         }, $this->lang);
     }
 
-    private function processLang($lang)
+    protected function processLang($lang)
     {
         $src = Str::finish($this->path_src . $lang);
         $dst = Str::finish($this->path_dst . $lang);
@@ -30,7 +30,7 @@ class ArrayLangService extends BaseService
         $this->processFile($src, $dst, $lang);
     }
 
-    private function processFile($src, $dst, $lang)
+    protected function processFile($src, $dst, $lang)
     {
         $src_path = $src . '*.php';
 
