@@ -33,7 +33,7 @@ Instead, you may of course manually update your require block and run `composer 
 
 For using package in the Laravel 5.3-5.5 (php >= 5.6.0 <=7.1.2), use `^1.0` version.
 
-For using package in the Laravel 5.5-5.x (php >= 7.1.3), use `^2.0` version (default).
+For using package in the Laravel 5.5-7.x (php >= 7.1.3), use `^2.0` version (default).
 
 
 If you don't use auto-discovery, add the `ServiceProvider` to the providers array in `config/app.php`:
