@@ -124,12 +124,13 @@ abstract class BaseService implements LangContract
      * @param string $filename
      * @param bool $return_empty
      *
-     * @return array
      * @throws \Helldar\PrettyArray\Exceptions\FileDoesntExistsException
+     *
+     * @return array
      */
     protected function loadFile(string $filename, bool $return_empty = false): array
     {
-        if ($return_empty && ! file_exists($filename)) {
+        if ($return_empty && !file_exists($filename)) {
             return [];
         }
 
