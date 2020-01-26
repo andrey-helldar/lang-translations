@@ -32,7 +32,7 @@ class JsonLangService extends BaseService
         $src = Str::finish($this->path_src . $lang);
         $dst = Str::finish($this->path_dst);
 
-        if (!\file_exists($src)) {
+        if (! \file_exists($src)) {
             $this->error("The source directory for the \"{$lang}\" language was not found");
 
             return;
@@ -41,13 +41,20 @@ class JsonLangService extends BaseService
         $this->processFile($src, $dst, $lang);
     }
 
+    /**
+     * @param string $src
+     * @param string $dst
+     * @param string $lang
+     *
+     * @throws \Helldar\PrettyArray\Exceptions\FileDoesntExistsException
+     */
     private function processFile($src, $dst, $lang)
     {
         $src_path = $src . '*.php';
         $dst_path = $dst . $lang . '.json';
 
         foreach (\glob($src_path) as $src_file) {
-            if (!\is_file($src_file)) {
+            if (! \is_file($src_file)) {
                 continue;
             }
 
@@ -58,7 +65,7 @@ class JsonLangService extends BaseService
                 $target  = \json_decode($content, true);
             }
 
-            $source = \file_exists($src_file) ? require $src_file : [];
+            $source = $this->loadFile($src_file, true);
 
             $this->putSource($target, $this->trans_keys);
             $this->putSource($source, $this->trans_keys);
@@ -67,12 +74,15 @@ class JsonLangService extends BaseService
         $this->store($dst, $lang);
     }
 
+    /**
+     * @throws \Helldar\PrettyArray\Exceptions\FileDoesntExistsException
+     */
     private function getTransKeys()
     {
         $src_path = \sprintf('%s%s/*.php', $this->path_src, $this->default_lang);
 
         foreach (\glob($src_path) as $src_file) {
-            $items = require $src_file;
+            $items = $this->loadFile($src_file);
 
             $this->merge($this->trans_keys, $items);
         }
@@ -106,7 +116,7 @@ class JsonLangService extends BaseService
 
     private function put($key = null, $value = null)
     {
-        if (!\is_null($key) && !\is_null($value)) {
+        if (! \is_null($key) && ! \is_null($value)) {
             $this->result[$key] = $value;
         }
     }
@@ -116,13 +126,13 @@ class JsonLangService extends BaseService
         $source = Arr::merge($source, $array);
     }
 
-    private function store($dst, $lang)
+    protected function store(string $dst, array $lang)
     {
         $action   = \file_exists($dst) ? 'replaced' : 'copied';
         $filename = $lang . '.json';
         $dst_path = $dst . $filename;
 
-        if (!$this->force) {
+        if (! $this->force) {
             $this->error("File {$filename} already exists!");
 
             return;

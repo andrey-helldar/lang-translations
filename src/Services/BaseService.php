@@ -3,6 +3,8 @@
 namespace Helldar\LangTranslations\Services;
 
 use Helldar\LangTranslations\Contracts\LangContract;
+use Helldar\PrettyArray\Services\File;
+use Helldar\PrettyArray\Services\Formatter;
 use Helldar\Support\Facades\Arr;
 use Helldar\Support\Facades\Str;
 use Illuminate\Console\OutputStyle;
@@ -26,6 +28,11 @@ abstract class BaseService implements LangContract
     protected $is_json = false;
 
     /**
+     * @var array
+     */
+    protected $exclude = [];
+
+    /**
      * The output interface implementation.
      *
      * @var \Illuminate\Console\OutputStyle
@@ -36,6 +43,8 @@ abstract class BaseService implements LangContract
     {
         $this->path_src = Str::finish(__DIR__ . '/../lang', DIRECTORY_SEPARATOR);
         $this->path_dst = Str::finish(\resource_path('lang'), DIRECTORY_SEPARATOR);
+
+        $this->exclude = config('lang-publisher.exclude', []);
     }
 
     public function output(OutputStyle $output)
@@ -69,16 +78,25 @@ abstract class BaseService implements LangContract
         return $this;
     }
 
+    /**
+     * @param string $src
+     * @param string $dst
+     * @param string $filename
+     *
+     * @throws \Helldar\PrettyArray\Exceptions\FileDoesntExistsException
+     */
     protected function copy($src, $dst, $filename)
     {
         $action = \file_exists($dst) ? 'replaced' : 'copied';
 
-        $source = \file_exists($src) ? require $src : [];
-        $target = \file_exists($dst) ? require $dst : [];
+        $source = $this->loadFile($src, true);
+        $target = $this->loadFile($dst, true);
 
-        $source = Arr::merge($target, $source);
+        $excluded = $this->excluded($dst, $target);
 
-        Arr::storeAsArray($source, $dst, true);
+        $source = Arr::merge($target, $source, $excluded);
+
+        $this->store($dst, $source);
 
         $this->info("File {$filename} successfully {$action}");
     }
@@ -98,5 +116,61 @@ abstract class BaseService implements LangContract
     protected function error($string)
     {
         $this->line($string, 'error');
+    }
+
+    /**
+     * Loading existence check file.
+     *
+     * @param string $filename
+     * @param bool $return_empty
+     *
+     * @return array
+     * @throws \Helldar\PrettyArray\Exceptions\FileDoesntExistsException
+     */
+    protected function loadFile(string $filename, bool $return_empty = false): array
+    {
+        if ($return_empty && ! file_exists($filename)) {
+            return [];
+        }
+
+        return File::make()->load($filename);
+    }
+
+    /**
+     * Getting excluded keys.
+     *
+     * @param string $filename
+     * @param array $array
+     *
+     * @return array
+     */
+    protected function excluded(string $filename, array $array): array
+    {
+        $filename = pathinfo($filename, PATHINFO_FILENAME);
+        $keys     = $this->exclude[$filename] ?? [];
+
+        return array_intersect_key($array, $keys);
+    }
+
+    /**
+     * Saving the resulting array to a file.
+     *
+     * @param string $path
+     * @param array $array
+     */
+    protected function store(string $path, array $array)
+    {
+        ksort($array);
+
+        $service = Formatter::make();
+        $service->setKeyAsString();
+
+        if (config('lang-publisher.alignment') === true) {
+            $service->setEqualsAlign();
+        }
+
+        $content = $service->raw($array);
+
+        File::make($content)->store($path);
     }
 }
