@@ -14,6 +14,11 @@ class ArrayLangService extends BaseService
         }, $this->lang);
     }
 
+    /**
+     * @param $lang
+     *
+     * @throws \Helldar\PrettyArray\Exceptions\FileDoesntExistsException
+     */
     protected function processLang($lang)
     {
         $src = Str::finish($this->path_src . $lang);
@@ -30,6 +35,13 @@ class ArrayLangService extends BaseService
         $this->processFile($src, $dst, $lang);
     }
 
+    /**
+     * @param $src
+     * @param $dst
+     * @param $lang
+     *
+     * @throws \Helldar\PrettyArray\Exceptions\FileDoesntExistsException
+     */
     protected function processFile($src, $dst, $lang)
     {
         $src_path = $src . '*.php';

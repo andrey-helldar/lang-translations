@@ -17,6 +17,9 @@ class JsonLangService extends BaseService
 
     protected $result = [];
 
+    /**
+     * @throws \Helldar\PrettyArray\Exceptions\FileDoesntExistsException
+     */
     public function get()
     {
         $this->getTransKeys();
@@ -27,6 +30,11 @@ class JsonLangService extends BaseService
         }
     }
 
+    /**
+     * @param $lang
+     *
+     * @throws \Helldar\PrettyArray\Exceptions\FileDoesntExistsException
+     */
     protected function processLang($lang)
     {
         $src = Str::finish($this->path_src . $lang);
