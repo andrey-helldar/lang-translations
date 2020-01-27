@@ -2,7 +2,6 @@
 
 namespace Helldar\LangTranslations\Services;
 
-use function array_map;
 use function file_exists;
 
 use function glob;
