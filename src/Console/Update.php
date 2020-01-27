@@ -2,10 +2,10 @@
 
 namespace Helldar\LangTranslations\Console;
 
-use Helldar\Support\Facades\Str;
-use Illuminate\Console\Command;
-
 use function array_filter;
+use Helldar\Support\Facades\Str;
+
+use Illuminate\Console\Command;
 use function in_array;
 use function is_file;
 use function resource_path;
