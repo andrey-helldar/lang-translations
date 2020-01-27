@@ -158,7 +158,7 @@ abstract class BaseService implements LangContract
         $filename = pathinfo($filename, PATHINFO_FILENAME);
         $keys     = $this->exclude[$filename] ?? [];
 
-        return array_intersect_key($array, $keys);
+        return Arr::only($array, $keys);
     }
 
     /**
