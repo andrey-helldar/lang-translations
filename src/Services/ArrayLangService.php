@@ -5,11 +5,17 @@ namespace Helldar\LangTranslations\Services;
 use Helldar\Support\Facades\File;
 use Helldar\Support\Facades\Str;
 
+use function array_map;
+use function file_exists;
+use function glob;
+use function is_file;
+use function pathinfo;
+
 class ArrayLangService extends BaseService
 {
     public function get()
     {
-        \array_map(function ($lang) {
+        array_map(function ($lang) {
             $this->processLang($lang);
         }, $this->lang);
     }
@@ -24,7 +30,7 @@ class ArrayLangService extends BaseService
         $src = Str::finish($this->path_src . $lang);
         $dst = Str::finish($this->path_dst . $lang);
 
-        if (!\file_exists($src)) {
+        if (! file_exists($src)) {
             $this->error("The source directory for the \"{$lang}\" language was not found");
 
             return;
@@ -46,16 +52,16 @@ class ArrayLangService extends BaseService
     {
         $src_path = $src . '*.php';
 
-        foreach (\glob($src_path) as $src_file) {
-            $basename = \pathinfo($src_file, PATHINFO_BASENAME);
+        foreach (glob($src_path) as $src_file) {
+            $basename = pathinfo($src_file, PATHINFO_BASENAME);
             $filename = $lang . DIRECTORY_SEPARATOR . $basename;
             $dst_file = $dst . $basename;
 
-            if (!\is_file($src_file)) {
+            if (! is_file($src_file)) {
                 continue;
             }
 
-            if ($this->force || !\file_exists($dst_file)) {
+            if ($this->force || ! file_exists($dst_file)) {
                 $this->copy($src_file, $dst_file, $filename);
             } else {
                 $this->info("The target file \"{$filename}\" exists.");

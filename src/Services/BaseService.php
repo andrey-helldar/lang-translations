@@ -3,12 +3,17 @@
 namespace Helldar\LangTranslations\Services;
 
 use Helldar\LangTranslations\Contracts\LangContract;
+use Helldar\PrettyArray\Contracts\Caseable;
 use Helldar\PrettyArray\Services\File;
 use Helldar\PrettyArray\Services\Formatter;
 use Helldar\Support\Facades\Arr;
 use Helldar\Support\Facades\Str;
 use Illuminate\Console\OutputStyle;
 use Symfony\Component\Console\Output\OutputInterface;
+
+use function file_exists;
+use function ksort;
+use function resource_path;
 
 abstract class BaseService implements LangContract
 {
@@ -30,6 +35,9 @@ abstract class BaseService implements LangContract
     /** @var array */
     protected $exclude = [];
 
+    /** @var int */
+    protected $case;
+
     /**
      * The output interface implementation.
      *
@@ -40,9 +48,10 @@ abstract class BaseService implements LangContract
     public function __construct()
     {
         $this->path_src = Str::finish(__DIR__ . '/../lang', DIRECTORY_SEPARATOR);
-        $this->path_dst = Str::finish(\resource_path('lang'), DIRECTORY_SEPARATOR);
+        $this->path_dst = Str::finish(resource_path('lang'), DIRECTORY_SEPARATOR);
 
         $this->exclude = config('lang-publisher.exclude', []);
+        $this->case    = config('lang-publisher.case', Caseable::NO_CASE);
     }
 
     public function output(OutputStyle $output)
@@ -82,10 +91,11 @@ abstract class BaseService implements LangContract
      * @param string $filename
      *
      * @throws \Helldar\PrettyArray\Exceptions\FileDoesntExistsException
+     * @throws \Helldar\PrettyArray\Exceptions\UnknownCaseTypeException
      */
     protected function copy($src, $dst, $filename)
     {
-        $action = \file_exists($dst) ? 'replaced' : 'copied';
+        $action = file_exists($dst) ? 'replaced' : 'copied';
 
         $source = $this->loadFile($src, true);
         $target = $this->loadFile($dst, true);
@@ -156,6 +166,8 @@ abstract class BaseService implements LangContract
      *
      * @param string $path
      * @param array $array
+     *
+     * @throws \Helldar\PrettyArray\Exceptions\UnknownCaseTypeException
      */
     protected function store(string $path, array $array)
     {
@@ -163,6 +175,7 @@ abstract class BaseService implements LangContract
 
         $service = Formatter::make();
         $service->setKeyAsString();
+        $service->setCase($this->case);
 
         if (config('lang-publisher.alignment') === true) {
             $service->setEqualsAlign();

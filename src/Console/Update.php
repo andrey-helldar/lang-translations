@@ -5,6 +5,12 @@ namespace Helldar\LangTranslations\Console;
 use Helldar\Support\Facades\Str;
 use Illuminate\Console\Command;
 
+use function array_filter;
+use function in_array;
+use function is_file;
+use function resource_path;
+use function scandir;
+
 class Update extends Command
 {
     protected $signature = 'lang-translations:update {--j|json}';
@@ -20,16 +26,16 @@ class Update extends Command
 
     protected function getLangDirectories(): array
     {
-        $path = \resource_path('lang');
+        $path = resource_path('lang');
         $path = Str::finish($path, DIRECTORY_SEPARATOR);
-        $dir  = \scandir($path);
+        $dir  = scandir($path);
 
-        return \array_filter($dir, function ($item) use ($path) {
-            if (\is_file($path . $item)) {
+        return array_filter($dir, function ($item) use ($path) {
+            if (is_file($path . $item)) {
                 return false;
             }
 
-            return !\in_array($item, ['.', '..', 'vendor']);
+            return ! in_array($item, ['.', '..', 'vendor']);
         });
     }
 
