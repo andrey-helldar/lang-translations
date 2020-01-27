@@ -15,9 +15,9 @@ class ArrayLangService extends BaseService
 {
     public function get()
     {
-        array_map(function ($lang) {
+        foreach ($this->lang as $lang) {
             $this->processLang($lang);
-        }, $this->lang);
+        }
     }
 
     /**
