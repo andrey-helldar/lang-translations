@@ -2,20 +2,20 @@
 
 namespace Helldar\LangTranslations\Services;
 
-use function file_exists;
-use Helldar\LangTranslations\Contracts\LangContract;
+use Helldar\LangTranslations\Contracts\Lang;
 use Helldar\PrettyArray\Contracts\Caseable;
 use Helldar\PrettyArray\Services\File;
 use Helldar\PrettyArray\Services\Formatter;
 use Helldar\Support\Facades\Arr;
 use Helldar\Support\Facades\Str;
 use Illuminate\Console\OutputStyle;
-
-use function ksort;
-use function resource_path;
 use Symfony\Component\Console\Output\OutputInterface;
 
-abstract class BaseService implements LangContract
+use function file_exists;
+use function ksort;
+use function resource_path;
+
+abstract class BaseService implements Lang
 {
     /** @var string */
     protected $path_src;
@@ -132,9 +132,9 @@ abstract class BaseService implements LangContract
      * @param string $filename
      * @param bool $return_empty
      *
+     * @return array
      * @throws \Helldar\PrettyArray\Exceptions\FileDoesntExistsException
      *
-     * @return array
      */
     protected function loadFile(string $filename, bool $return_empty = false): array
     {
