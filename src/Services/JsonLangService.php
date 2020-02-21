@@ -9,7 +9,6 @@ use function file_exists;
 use function file_get_contents;
 use function is_null;
 use function json_decode;
-use function ksort;
 use function resource_path;
 
 class JsonLangService extends BaseService
@@ -134,7 +133,7 @@ class JsonLangService extends BaseService
         $filename = \pathinfo($dst, PATHINFO_BASENAME);
 
         if ($this->force || ! file_exists($dst)) {
-            ksort($array);
+            $this->ksort($array);
 
             Arr::storeAsJson($array, $dst, true);
 
