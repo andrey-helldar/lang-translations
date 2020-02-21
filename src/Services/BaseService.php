@@ -7,7 +7,7 @@ use Helldar\PrettyArray\Contracts\Caseable;
 use Helldar\PrettyArray\Services\File;
 use Helldar\PrettyArray\Services\Formatter;
 use Helldar\Support\Facades\Arr;
-use Helldar\Support\Facades\File as FileSupport;
+use Helldar\Support\Facades\Directory;
 use Helldar\Support\Facades\Str;
 use Illuminate\Console\OutputStyle;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -186,7 +186,7 @@ abstract class BaseService implements Lang
         }
 
         if (! $is_json) {
-            FileSupport::makeDirectory($dst);
+            Directory::make($dst);
         }
 
         $this->processFile($src, $dst, $lang);
