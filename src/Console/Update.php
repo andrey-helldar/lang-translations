@@ -13,6 +13,9 @@ class Update extends Command
 
     protected $description = 'Update translations files.';
 
+    /**
+     * @throws \Helldar\Support\Exceptions\DirectoryNotFoundException
+     */
     public function handle()
     {
         $this->install(
@@ -29,6 +32,10 @@ class Update extends Command
         ]);
     }
 
+    /**
+     * @return array
+     * @throws \Helldar\Support\Exceptions\DirectoryNotFoundException
+     */
     protected function languages(): array
     {
         return Directory::names(
