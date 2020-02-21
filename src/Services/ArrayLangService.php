@@ -2,16 +2,19 @@
 
 namespace Helldar\LangTranslations\Services;
 
-use function file_exists;
-
-use function glob;
 use Helldar\Support\Facades\File;
 use Helldar\Support\Facades\Str;
+
+use function file_exists;
+use function glob;
 use function is_file;
 use function pathinfo;
 
 class ArrayLangService extends BaseService
 {
+    /**
+     * @throws \Helldar\PrettyArray\Exceptions\FileDoesntExistsException
+     */
     public function get()
     {
         foreach ($this->lang as $lang) {
