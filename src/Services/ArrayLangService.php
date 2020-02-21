@@ -23,11 +23,12 @@ class ArrayLangService extends BaseService
     }
 
     /**
-     * @param $lang
+     * @param string $lang
      *
      * @throws \Helldar\PrettyArray\Exceptions\FileDoesntExistsException
+     * @throws \Helldar\PrettyArray\Exceptions\UnknownCaseTypeException
      */
-    protected function processLang($lang)
+    protected function processLang(string $lang)
     {
         $src = Str::finish($this->path_src . $lang);
         $dst = Str::finish($this->path_dst . $lang);
@@ -44,13 +45,14 @@ class ArrayLangService extends BaseService
     }
 
     /**
-     * @param $src
-     * @param $dst
-     * @param $lang
+     * @param string $src
+     * @param string $dst
+     * @param string $lang
      *
      * @throws \Helldar\PrettyArray\Exceptions\FileDoesntExistsException
+     * @throws \Helldar\PrettyArray\Exceptions\UnknownCaseTypeException
      */
-    protected function processFile($src, $dst, $lang)
+    protected function processFile(string $src, string $dst, string $lang)
     {
         $src_path = $src . '*.php';
 

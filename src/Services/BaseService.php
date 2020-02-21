@@ -56,7 +56,7 @@ abstract class BaseService implements Lang
         $this->case    = config('lang-publisher.case', Caseable::NO_CASE);
     }
 
-    public function output(OutputStyle $output)
+    public function output(OutputStyle $output): Lang
     {
         $this->output = $output;
 
@@ -68,7 +68,7 @@ abstract class BaseService implements Lang
      *
      * @return $this
      */
-    public function lang(array $values = [])
+    public function lang(array $values = []): Lang
     {
         $this->lang = $values;
 
@@ -80,7 +80,7 @@ abstract class BaseService implements Lang
      *
      * @return $this
      */
-    public function force(bool $value = false)
+    public function force(bool $value = false): Lang
     {
         $this->force = $value;
 
@@ -111,19 +111,29 @@ abstract class BaseService implements Lang
         $this->info("File {$filename} successfully {$action}");
     }
 
-    protected function line($string, $style = null)
+    /**
+     * @param string $string
+     * @param string|null $style
+     */
+    protected function line(string $string, string $style = null)
     {
         $styled = $style ? "<$style>$string</$style>" : $string;
 
         $this->output->writeln($styled, OutputInterface::OUTPUT_NORMAL);
     }
 
-    protected function info($string)
+    /**
+     * @param string $string
+     */
+    protected function info(string $string)
     {
         $this->line($string, 'info');
     }
 
-    protected function error($string)
+    /**
+     * @param string $string
+     */
+    protected function error(string $string)
     {
         $this->line($string, 'error');
     }
