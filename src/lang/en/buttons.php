@@ -68,5 +68,4 @@ return [
 
     'iAgreeTo'                      => 'I agree to',
     'termsOfProcessingPersonalData' => 'the terms of processing personal data',
-
 ];

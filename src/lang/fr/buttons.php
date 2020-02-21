@@ -66,5 +66,4 @@ return [
 
     'iAgreeTo'                      => 'Je suis d\'accord pour',
     'termsOfProcessingPersonalData' => 'les conditions de traitement des données personnelles',
-
 ];

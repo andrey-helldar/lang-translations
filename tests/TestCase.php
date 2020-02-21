@@ -3,9 +3,9 @@
 namespace Tests;
 
 use Helldar\LangTranslations\ServiceProvider;
-use Orchestra\Testbench\TestCase as OrchestraTestCase;
-
 use function implode;
+
+use Orchestra\Testbench\TestCase as OrchestraTestCase;
 
 abstract class TestCase extends OrchestraTestCase
 {

@@ -36,8 +36,9 @@ class Install extends Command
     /**
      * @param bool $is_json
      *
-     * @return \Helldar\LangTranslations\Contracts\Lang
      * @throws \Illuminate\Contracts\Container\BindingResolutionException
+     *
+     * @return \Helldar\LangTranslations\Contracts\Lang
      */
     protected function service(bool $is_json = false): Lang
     {
@@ -49,8 +50,9 @@ class Install extends Command
     /**
      * @param string $classname
      *
-     * @return mixed|object
      * @throws \Illuminate\Contracts\Container\BindingResolutionException
+     *
+     * @return mixed|object
      */
     protected function app(string $classname)
     {
