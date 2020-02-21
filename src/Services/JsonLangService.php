@@ -3,16 +3,14 @@
 namespace Helldar\LangTranslations\Services;
 
 use Helldar\Support\Facades\Arr;
+use Helldar\Support\Facades\Directory;
 
 use function file_exists;
 use function file_get_contents;
-use function glob;
-use function is_file;
 use function is_null;
 use function json_decode;
 use function ksort;
 use function resource_path;
-use function sprintf;
 
 class JsonLangService extends BaseService
 {
@@ -28,6 +26,7 @@ class JsonLangService extends BaseService
 
     /**
      * @throws \Helldar\PrettyArray\Exceptions\FileDoesntExistsException
+     * @throws \Helldar\Support\Exceptions\DirectoryNotFoundException
      */
     public function get()
     {
@@ -46,14 +45,14 @@ class JsonLangService extends BaseService
      *
      * @throws \Helldar\PrettyArray\Exceptions\FileDoesntExistsException
      * @throws \Helldar\PrettyArray\Exceptions\UnknownCaseTypeException
+     * @throws \Helldar\Support\Exceptions\DirectoryNotFoundException
      */
     protected function processFile(string $src, string $dst, string $lang)
     {
-        $src_path = $src . '*.php';
         $dst_path = $dst . $lang . '.json';
 
-        foreach (glob($src_path) as $src_file) {
-            if (! is_file($src_file)) {
+        foreach (Directory::all($src) as $file) {
+            if ($file->isDot() || ! $file->isFile()) {
                 continue;
             }
 
@@ -64,7 +63,7 @@ class JsonLangService extends BaseService
                 $target  = json_decode($content, true);
             }
 
-            $source = $this->loadFile($src_file, true);
+            $source = $this->loadFile($file->getRealPath(), true);
 
             $this->putSource($target, $this->trans_keys);
             $this->putSource($source, $this->trans_keys);
@@ -75,13 +74,18 @@ class JsonLangService extends BaseService
 
     /**
      * @throws \Helldar\PrettyArray\Exceptions\FileDoesntExistsException
+     * @throws \Helldar\Support\Exceptions\DirectoryNotFoundException
      */
     protected function getTransKeys()
     {
-        $src_path = sprintf('%s%s/*.php', $this->path_src, $this->default_lang);
+        $path = $this->path_src . $this->default_lang;
 
-        foreach (glob($src_path) as $src_file) {
-            $items = $this->loadFile($src_file);
+        foreach (Directory::all($path) as $file) {
+            if ($file->isDot() || ! $file->isFile()) {
+                continue;
+            }
+
+            $items = $this->loadFile($file->getRealPath());
 
             $this->merge($this->trans_keys, $items);
         }

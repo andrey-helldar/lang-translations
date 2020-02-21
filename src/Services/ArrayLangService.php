@@ -2,10 +2,9 @@
 
 namespace Helldar\LangTranslations\Services;
 
+use Helldar\Support\Facades\Directory;
+
 use function file_exists;
-use function glob;
-use function is_file;
-use function pathinfo;
 
 class ArrayLangService extends BaseService
 {
@@ -19,28 +18,24 @@ class ArrayLangService extends BaseService
     /**
      * @param string $src
      * @param string $dst
-     * @param string $lang
      *
      * @throws \Helldar\PrettyArray\Exceptions\FileDoesntExistsException
      * @throws \Helldar\PrettyArray\Exceptions\UnknownCaseTypeException
+     * @throws \Helldar\Support\Exceptions\DirectoryNotFoundException
      */
-    protected function processFile(string $src, string $dst, string $lang)
+    protected function processFile(string $src, string $dst)
     {
-        $src_path = $src . '*.php';
-
-        foreach (glob($src_path) as $src_file) {
-            $basename = pathinfo($src_file, PATHINFO_BASENAME);
-            $filename = $lang . DIRECTORY_SEPARATOR . $basename;
-            $dst_file = $dst . $basename;
-
-            if (! is_file($src_file)) {
+        foreach (Directory::all($src) as $file) {
+            if ($file->isDot() || ! $file->isFile()) {
                 continue;
             }
 
+            $dst_file = $dst . $file->getFilename();
+
             if ($this->force || ! file_exists($dst_file)) {
-                $this->copy($src_file, $dst_file, $filename);
+                $this->copy($file->getRealPath(), $dst_file, $file->getFilename());
             } else {
-                $this->info("The target file \"{$filename}\" exists.");
+                $this->info("The target file \"{$file->getFilename()}\" exists.");
             }
         }
     }
