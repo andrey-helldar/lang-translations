@@ -14,6 +14,7 @@ class ArrayLangService extends BaseService
 {
     /**
      * @throws \Helldar\PrettyArray\Exceptions\FileDoesntExistsException
+     * @throws \Helldar\PrettyArray\Exceptions\UnknownCaseTypeException
      */
     public function get()
     {
