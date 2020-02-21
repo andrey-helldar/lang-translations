@@ -2,12 +2,18 @@
 
 namespace Helldar\LangTranslations\Services;
 
+use Helldar\Support\Facades\Arr;
 use Helldar\Support\Facades\Directory;
+use Helldar\Support\Facades\Str;
 
 use function file_exists;
 
 class ArrayLangService extends BaseService
 {
+    /**
+     * @throws \Helldar\PrettyArray\Exceptions\FileDoesntExistsException
+     * @throws \Helldar\PrettyArray\Exceptions\UnknownCaseTypeException
+     */
     public function get()
     {
         foreach ($this->lang as $lang) {
@@ -18,12 +24,13 @@ class ArrayLangService extends BaseService
     /**
      * @param string $src
      * @param string $dst
+     * @param string $lang
      *
      * @throws \Helldar\PrettyArray\Exceptions\FileDoesntExistsException
      * @throws \Helldar\PrettyArray\Exceptions\UnknownCaseTypeException
      * @throws \Helldar\Support\Exceptions\DirectoryNotFoundException
      */
-    protected function processFile(string $src, string $dst)
+    protected function processFile(string $src, string $dst, string $lang)
     {
         foreach (Directory::all($src) as $file) {
             if ($file->isDot() || ! $file->isFile()) {
@@ -38,5 +45,28 @@ class ArrayLangService extends BaseService
                 $this->info("The target file \"{$file->getFilename()}\" exists.");
             }
         }
+
+        $this->mirrorAttributes($lang);
+    }
+
+    /**
+     * @param string $lang
+     *
+     * @throws \Helldar\PrettyArray\Exceptions\FileDoesntExistsException
+     * @throws \Helldar\PrettyArray\Exceptions\UnknownCaseTypeException
+     */
+    protected function mirrorAttributes(string $lang)
+    {
+        $src = Str::finish($this->path_src . $lang) . 'forms.php';
+        $dst = Str::finish($this->path_dst . $lang) . 'validation.php';
+
+        $source = $this->loadFile($src, true);
+        $target = $this->loadFile($dst, true);
+
+        $target = Arr::merge($target, ['attributes' => $source]);
+
+        $this->store($dst, $target);
+
+        $this->info("Attributes successfully mirrored for the {$lang}.");
     }
 }
