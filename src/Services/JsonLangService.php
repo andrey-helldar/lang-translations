@@ -3,7 +3,6 @@
 namespace Helldar\LangTranslations\Services;
 
 use Helldar\Support\Facades\Arr;
-use Helldar\Support\Facades\Str;
 
 use function file_exists;
 use function file_get_contents;
@@ -29,7 +28,6 @@ class JsonLangService extends BaseService
 
     /**
      * @throws \Helldar\PrettyArray\Exceptions\FileDoesntExistsException
-     * @throws \Helldar\PrettyArray\Exceptions\UnknownCaseTypeException
      */
     public function get()
     {
@@ -39,26 +37,6 @@ class JsonLangService extends BaseService
         foreach ($this->lang as $lang) {
             $this->processLang($lang);
         }
-    }
-
-    /**
-     * @param string $lang
-     *
-     * @throws \Helldar\PrettyArray\Exceptions\FileDoesntExistsException
-     * @throws \Helldar\PrettyArray\Exceptions\UnknownCaseTypeException
-     */
-    protected function processLang(string $lang)
-    {
-        $src = Str::finish($this->path_src . $lang);
-        $dst = Str::finish($this->path_dst);
-
-        if (! file_exists($src)) {
-            $this->error("The source directory for the \"{$lang}\" language was not found");
-
-            return;
-        }
-
-        $this->processFile($src, $dst, $lang);
     }
 
     /**

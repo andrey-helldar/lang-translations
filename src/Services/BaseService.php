@@ -7,6 +7,7 @@ use Helldar\PrettyArray\Contracts\Caseable;
 use Helldar\PrettyArray\Services\File;
 use Helldar\PrettyArray\Services\Formatter;
 use Helldar\Support\Facades\Arr;
+use Helldar\Support\Facades\File as FileSupport;
 use Helldar\Support\Facades\Str;
 use Illuminate\Console\OutputStyle;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -171,6 +172,22 @@ abstract class BaseService implements Lang
         $keys     = $this->exclude[$filename] ?? [];
 
         return Arr::only($array, $keys);
+    }
+
+    protected function processLang(string $lang)
+    {
+        $src = Str::finish($this->path_src . $lang);
+        $dst = Str::finish($this->path_dst . $lang);
+
+        if (! file_exists($src)) {
+            $this->error("The source directory for the \"{$lang}\" language was not found");
+
+            return;
+        }
+
+        FileSupport::makeDirectory($dst);
+
+        $this->processFile($src, $dst, $lang);
     }
 
     /**
