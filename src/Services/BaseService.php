@@ -96,7 +96,7 @@ abstract class BaseService implements Lang
      * @throws \Helldar\PrettyArray\Exceptions\FileDoesntExistsException
      * @throws \Helldar\PrettyArray\Exceptions\UnknownCaseTypeException
      */
-    protected function copy($src, $dst, $filename)
+    protected function copy(string $src, string $dst, string $filename)
     {
         $action = file_exists($dst) ? 'replaced' : 'copied';
 
