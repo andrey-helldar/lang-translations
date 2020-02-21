@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "82bcabdf247f9dc893a7c9b2cadcac12",
+    "content-hash": "3cdfc2483f9f0bbfd9ed7c1ff2a92c25",
     "packages": [
         {
             "name": "andrey-helldar/pretty-array",
