@@ -174,18 +174,20 @@ abstract class BaseService implements Lang
         return Arr::only($array, $keys);
     }
 
-    protected function processLang(string $lang)
+    protected function processLang(string $lang, bool $is_json = false)
     {
         $src = Str::finish($this->path_src . $lang);
-        $dst = Str::finish($this->path_dst . $lang);
+        $dst = Str::finish($this->path_dst . ($is_json ? '' : $lang));
 
         if (! file_exists($src)) {
-            $this->error("The source directory for the \"{$lang}\" language was not found");
+            $this->error("The source directory for the \"{$lang}\" language was not found.");
 
             return;
         }
 
-        FileSupport::makeDirectory($dst);
+        if (! $is_json) {
+            FileSupport::makeDirectory($dst);
+        }
 
         $this->processFile($src, $dst, $lang);
     }

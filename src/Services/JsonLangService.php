@@ -35,7 +35,7 @@ class JsonLangService extends BaseService
         $this->loadResult();
 
         foreach ($this->lang as $lang) {
-            $this->processLang($lang);
+            $this->processLang($lang, true);
         }
     }
 
@@ -70,7 +70,7 @@ class JsonLangService extends BaseService
             $this->putSource($source, $this->trans_keys);
         }
 
-        $this->store($dst, $lang);
+        $this->store($dst_path, $this->result);
     }
 
     /**
@@ -125,22 +125,22 @@ class JsonLangService extends BaseService
         $source = Arr::merge($source, $array);
     }
 
-    protected function store(string $dst, array $lang)
+    protected function store(string $dst, array $array)
     {
-        $action   = file_exists($dst) ? 'replaced' : 'copied';
-        $filename = $lang . '.json';
-        $dst_path = $dst . $filename;
+        $filename = \pathinfo($dst, PATHINFO_BASENAME);
 
-        if (! $this->force) {
-            $this->error("File {$filename} already exists!");
+        if ($this->force || ! file_exists($dst)) {
+            ksort($array);
+
+            Arr::storeAsJson($array, $dst, true);
+
+            $action = file_exists($dst) ? 'replaced' : 'copied';
+
+            $this->info("File {$filename} successfully {$action}");
 
             return;
         }
 
-        ksort($this->result);
-
-        Arr::storeAsJson($this->result, $dst_path, true);
-
-        $this->info("File {$filename} successfully {$action}");
+        $this->error("File {$filename} doesn't exists.");
     }
 }

@@ -17,6 +17,9 @@ class Install extends Command
 
     protected $description = 'Install translations files.';
 
+    /**
+     * @throws \Illuminate\Contracts\Container\BindingResolutionException
+     */
     public function handle()
     {
         $lang    = (array) $this->argument('lang');
@@ -30,6 +33,12 @@ class Install extends Command
             ->get();
     }
 
+    /**
+     * @param bool $is_json
+     *
+     * @return \Helldar\LangTranslations\Contracts\Lang
+     * @throws \Illuminate\Contracts\Container\BindingResolutionException
+     */
     protected function service(bool $is_json = false): Lang
     {
         return $is_json
@@ -37,6 +46,12 @@ class Install extends Command
             : $this->app(ArrayLangService::class);
     }
 
+    /**
+     * @param string $classname
+     *
+     * @return mixed|object
+     * @throws \Illuminate\Contracts\Container\BindingResolutionException
+     */
     protected function app(string $classname)
     {
         return Container::getInstance()
