@@ -66,5 +66,4 @@ return [
 
     'iAgreeTo'                      => 'Razıyam',
     'termsOfProcessingPersonalData' => 'şəxsi məlumatların emalı şərtləri',
-
 ];

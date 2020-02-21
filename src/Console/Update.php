@@ -33,8 +33,9 @@ class Update extends Command
     }
 
     /**
-     * @return array
      * @throws \Helldar\Support\Exceptions\DirectoryNotFoundException
+     *
+     * @return array
      */
     protected function languages(): array
     {

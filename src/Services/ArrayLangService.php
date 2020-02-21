@@ -2,11 +2,11 @@
 
 namespace Helldar\LangTranslations\Services;
 
+use function file_exists;
 use Helldar\Support\Facades\Arr;
 use Helldar\Support\Facades\Directory;
-use Helldar\Support\Facades\Str;
 
-use function file_exists;
+use Helldar\Support\Facades\Str;
 
 class ArrayLangService extends BaseService
 {

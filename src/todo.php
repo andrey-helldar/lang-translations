@@ -104,7 +104,7 @@ class TodoGenerator
         $output = "# Todo list\n\n";
 
         // Make menu
-        $count   = sizeof($this->output);
+        $count   = count($this->output);
         $columns = $count < 12 ? $count : 12;
 
         $captions    = implode('|', array_fill(0, $columns, ' '));
