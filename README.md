@@ -20,17 +20,13 @@ To get the latest version of Lang Translations Library, simply require the proje
 
 ```
 $ composer require andrey-helldar/lang-translations --dev
-$ composer require andrey-helldar/pretty-array
 ```
 
-Instead, you may of course manually update your `require` and `require-dev` blocks and run `composer update` if you so choose:
+Instead, you may of course manually update your `require` block and run `composer update` if you so choose:
 
 ```json
 {
     "require": {
-        "andrey-helldar/pretty-array": "^1.0"
-    },
-    "require-dev": {
         "andrey-helldar/lang-translations": "^2.0"
     }
 }
