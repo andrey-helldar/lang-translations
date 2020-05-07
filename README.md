@@ -19,7 +19,8 @@ Translation support for 69 languages.
 To get the latest version of Lang Translations Library, simply require the project using [Composer](https://getcomposer.org):
 
 ```
-composer require andrey-helldar/lang-translations
+$ composer require andrey-helldar/lang-translations --dev
+$ composer require andrey-helldar/pretty-array
 ```
 
 Instead, you may of course manually update your require block and run `composer update` if you so choose:
@@ -27,6 +28,9 @@ Instead, you may of course manually update your require block and run `composer 
 ```json
 {
     "require": {
+        "andrey-helldar/pretty-array": "^1.0"
+    },
+    "require-dev": {
         "andrey-helldar/lang-translations": "^2.0"
     }
 }
