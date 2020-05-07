@@ -16,7 +16,7 @@ Translation support for 69 languages.
 
 ## Installation
 
-To get the latest version of Lang Translations Library, simply require the project using [Composer](https://getcomposer.org):
+To get the latest version of Lang Translations Library, simply `require` and `require-dev` the project using [Composer](https://getcomposer.org):
 
 ```
 $ composer require andrey-helldar/lang-translations --dev
