@@ -1,4 +1,7 @@
 .idea/
 vendor/
 node_modules/
+
+composer.lock
+
 *.log
