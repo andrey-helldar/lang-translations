@@ -15,6 +15,10 @@ return [
     'sent'      => 'Sent',
     'processed' => 'Processed',
 
+    'sync'       => 'Synchronization...',
+    'synced'     => 'Synchronized',
+    'not_synced' => 'Not synchronized',
+
     'created'  => 'Created',
     'stored'   => 'Stored',
     'updated'  => 'Updated',
