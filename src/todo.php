@@ -1,6 +1,6 @@
 <?php
 
-class TodoGenerator
+class todo
 {
     /** @var string */
     protected $base_path;
