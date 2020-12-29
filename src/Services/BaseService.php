@@ -2,20 +2,14 @@
 
 namespace Helldar\LangTranslations\Services;
 
-use function config;
-use function file_exists;
 use Helldar\LangTranslations\Contracts\Lang;
 use Helldar\PrettyArray\Contracts\Caseable;
 use Helldar\PrettyArray\Services\File;
 use Helldar\PrettyArray\Services\Formatter;
-use Helldar\Support\Facades\Arr;
-use Helldar\Support\Facades\Directory;
-use Helldar\Support\Facades\Str;
-
+use Helldar\Support\Facades\Helpers\Arr;
+use Helldar\Support\Facades\Helpers\Filesystem\Directory;
+use Helldar\Support\Facades\Helpers\Str;
 use Illuminate\Console\OutputStyle;
-use function ksort;
-use function pathinfo;
-use function resource_path;
 use Symfony\Component\Console\Output\OutputInterface;
 
 abstract class BaseService implements Lang
@@ -65,7 +59,7 @@ abstract class BaseService implements Lang
     }
 
     /**
-     * @param array $values
+     * @param  array  $values
      *
      * @return $this
      */
@@ -77,7 +71,7 @@ abstract class BaseService implements Lang
     }
 
     /**
-     * @param bool $value
+     * @param  bool  $value
      *
      * @return $this
      */
@@ -89,9 +83,9 @@ abstract class BaseService implements Lang
     }
 
     /**
-     * @param string $src
-     * @param string $dst
-     * @param string $filename
+     * @param  string  $src
+     * @param  string  $dst
+     * @param  string  $filename
      *
      * @throws \Helldar\PrettyArray\Exceptions\FileDoesntExistsException
      * @throws \Helldar\PrettyArray\Exceptions\UnknownCaseTypeException
@@ -113,8 +107,8 @@ abstract class BaseService implements Lang
     }
 
     /**
-     * @param string $string
-     * @param string|null $style
+     * @param  string  $string
+     * @param  string|null  $style
      */
     protected function line(string $string, string $style = null)
     {
@@ -124,7 +118,7 @@ abstract class BaseService implements Lang
     }
 
     /**
-     * @param string $string
+     * @param  string  $string
      */
     protected function info(string $string)
     {
@@ -132,7 +126,7 @@ abstract class BaseService implements Lang
     }
 
     /**
-     * @param string $string
+     * @param  string  $string
      */
     protected function error(string $string)
     {
@@ -142,8 +136,8 @@ abstract class BaseService implements Lang
     /**
      * Loading existence check file.
      *
-     * @param string $filename
-     * @param bool $return_empty
+     * @param  string  $filename
+     * @param  bool  $return_empty
      *
      * @throws \Helldar\PrettyArray\Exceptions\FileDoesntExistsException
      *
@@ -161,8 +155,8 @@ abstract class BaseService implements Lang
     /**
      * Getting excluded keys.
      *
-     * @param string $filename
-     * @param array $array
+     * @param  string  $filename
+     * @param  array  $array
      *
      * @return array
      */
@@ -195,8 +189,8 @@ abstract class BaseService implements Lang
     /**
      * Saving the resulting array to a file.
      *
-     * @param string $path
-     * @param array $array
+     * @param  string  $path
+     * @param  array  $array
      *
      * @throws \Helldar\PrettyArray\Exceptions\UnknownCaseTypeException
      */

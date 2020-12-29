@@ -36,13 +36,13 @@ class InstallTest extends TestCase
 
     public function testNotInstalled()
     {
-        $this->assertDirectoryNotExists($this->langPath('de'));
-        $this->assertFileNotExists($this->langPath('de/auth.php'));
-        $this->assertFileNotExists($this->langPath('de/buttons.php'));
-        $this->assertFileNotExists($this->langPath('de/errors.php'));
-        $this->assertFileNotExists($this->langPath('de/forms.php'));
-        $this->assertFileNotExists($this->langPath('de/statuses.php'));
-        $this->assertFileNotExists($this->langPath('de/titles.php'));
+        $this->assertDirectoryDoesNotExist($this->langPath('de'));
+        $this->assertFileDoesNotExist($this->langPath('de/auth.php'));
+        $this->assertFileDoesNotExist($this->langPath('de/buttons.php'));
+        $this->assertFileDoesNotExist($this->langPath('de/errors.php'));
+        $this->assertFileDoesNotExist($this->langPath('de/forms.php'));
+        $this->assertFileDoesNotExist($this->langPath('de/statuses.php'));
+        $this->assertFileDoesNotExist($this->langPath('de/titles.php'));
     }
 
     public function testReinstall()

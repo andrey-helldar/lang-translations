@@ -2,18 +2,12 @@
 
 namespace Helldar\LangTranslations\Services;
 
-use function file_exists;
-use Helldar\Support\Facades\Arr;
-use Helldar\Support\Facades\Directory;
-
-use Helldar\Support\Facades\Str;
+use Helldar\Support\Facades\Helpers\Arr;
+use Helldar\Support\Facades\Helpers\Filesystem\Directory;
+use Helldar\Support\Facades\Helpers\Str;
 
 class ArrayLangService extends BaseService
 {
-    /**
-     * @throws \Helldar\PrettyArray\Exceptions\FileDoesntExistsException
-     * @throws \Helldar\PrettyArray\Exceptions\UnknownCaseTypeException
-     */
     public function get()
     {
         foreach ($this->lang as $lang) {
@@ -22,13 +16,12 @@ class ArrayLangService extends BaseService
     }
 
     /**
-     * @param string $src
-     * @param string $dst
-     * @param string $lang
+     * @param  string  $src
+     * @param  string  $dst
+     * @param  string  $lang
      *
      * @throws \Helldar\PrettyArray\Exceptions\FileDoesntExistsException
      * @throws \Helldar\PrettyArray\Exceptions\UnknownCaseTypeException
-     * @throws \Helldar\Support\Exceptions\DirectoryNotFoundException
      */
     protected function processFile(string $src, string $dst, string $lang)
     {
@@ -50,7 +43,7 @@ class ArrayLangService extends BaseService
     }
 
     /**
-     * @param string $lang
+     * @param  string  $lang
      *
      * @throws \Helldar\PrettyArray\Exceptions\FileDoesntExistsException
      * @throws \Helldar\PrettyArray\Exceptions\UnknownCaseTypeException

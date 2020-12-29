@@ -2,11 +2,11 @@
 
 namespace Helldar\LangTranslations\Services;
 
+use Helldar\Support\Facades\Helpers\Arr;
+use Helldar\Support\Facades\Helpers\Filesystem\Directory;
+
 use function file_exists;
 use function file_get_contents;
-
-use Helldar\Support\Facades\Arr;
-use Helldar\Support\Facades\Directory;
 use function is_null;
 use function json_decode;
 use function resource_path;
@@ -38,9 +38,9 @@ class JsonLangService extends BaseService
     }
 
     /**
-     * @param string $src
-     * @param string $dst
-     * @param string $lang
+     * @param  string  $src
+     * @param  string  $dst
+     * @param  string  $lang
      *
      * @throws \Helldar\PrettyArray\Exceptions\FileDoesntExistsException
      * @throws \Helldar\PrettyArray\Exceptions\UnknownCaseTypeException
@@ -135,7 +135,7 @@ class JsonLangService extends BaseService
         if ($this->force || ! file_exists($dst)) {
             $this->ksort($array);
 
-            Arr::storeAsJson($array, $dst, true);
+            Arr::storeAsJson($dst, $array, true);
 
             $action = file_exists($dst) ? 'replaced' : 'copied';
 

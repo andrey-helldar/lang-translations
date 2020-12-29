@@ -2,7 +2,7 @@
 
 namespace Helldar\LangTranslations\Console;
 
-use Helldar\Support\Facades\Directory;
+use Helldar\Support\Facades\Helpers\Filesystem\Directory;
 use Illuminate\Console\Command;
 
 use function resource_path;
@@ -32,11 +32,6 @@ class Update extends Command
         ]);
     }
 
-    /**
-     * @throws \Helldar\Support\Exceptions\DirectoryNotFoundException
-     *
-     * @return array
-     */
     protected function languages(): array
     {
         return Directory::names(
