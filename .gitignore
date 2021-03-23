@@ -1,7 +1,10 @@
 .idea/
 vendor/
-node_modules/
+build/
+
+*.cache
+*.clover
+*.orig
+test.php
 
 composer.lock
-
-*.log
