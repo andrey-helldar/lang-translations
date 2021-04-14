@@ -36,13 +36,25 @@ class InstallTest extends TestCase
 
     public function testNotInstalled()
     {
-        $this->assertDirectoryDoesNotExist($this->langPath('de'));
-        $this->assertFileDoesNotExist($this->langPath('de/auth.php'));
-        $this->assertFileDoesNotExist($this->langPath('de/buttons.php'));
-        $this->assertFileDoesNotExist($this->langPath('de/errors.php'));
-        $this->assertFileDoesNotExist($this->langPath('de/forms.php'));
-        $this->assertFileDoesNotExist($this->langPath('de/statuses.php'));
-        $this->assertFileDoesNotExist($this->langPath('de/titles.php'));
+        method_exists($this, 'assertDirectoryDoesNotExist')
+            ? $this->assertDirectoryDoesNotExist($this->langPath('de'))
+            : $this->assertDirectoryNotExists($this->langPath('de'));
+
+        if (method_exists($this, 'assertFileDoesNotExist')) {
+            $this->assertFileDoesNotExist($this->langPath('de/auth.php'));
+            $this->assertFileDoesNotExist($this->langPath('de/buttons.php'));
+            $this->assertFileDoesNotExist($this->langPath('de/errors.php'));
+            $this->assertFileDoesNotExist($this->langPath('de/forms.php'));
+            $this->assertFileDoesNotExist($this->langPath('de/statuses.php'));
+            $this->assertFileDoesNotExist($this->langPath('de/titles.php'));
+        } else {
+            $this->assertFileNotExists($this->langPath('de/auth.php'));
+            $this->assertFileNotExists($this->langPath('de/buttons.php'));
+            $this->assertFileNotExists($this->langPath('de/errors.php'));
+            $this->assertFileNotExists($this->langPath('de/forms.php'));
+            $this->assertFileNotExists($this->langPath('de/statuses.php'));
+            $this->assertFileNotExists($this->langPath('de/titles.php'));
+        }
     }
 
     public function testReinstall()
