@@ -196,8 +196,6 @@ abstract class BaseService implements Lang
      */
     protected function store(string $path, array $array)
     {
-        $this->ksort($array);
-
         $service = Formatter::make();
         $service->setKeyAsString();
         $service->setCase($this->case);
@@ -209,16 +207,5 @@ abstract class BaseService implements Lang
         $content = $service->raw($array);
 
         File::make($content)->store($path);
-    }
-
-    protected function ksort(array &$array)
-    {
-        ksort($array);
-
-        foreach ($array as &$item) {
-            if (\is_array($item)) {
-                $this->ksort($item);
-            }
-        }
     }
 }

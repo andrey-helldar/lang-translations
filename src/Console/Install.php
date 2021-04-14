@@ -34,7 +34,7 @@ class Install extends Command
     }
 
     /**
-     * @param bool $is_json
+     * @param  bool  $is_json
      *
      * @throws \Illuminate\Contracts\Container\BindingResolutionException
      *
@@ -48,13 +48,14 @@ class Install extends Command
     }
 
     /**
-     * @param string $classname
+     * @param  string  $classname
+     *
+     * @throws \Illuminate\Contracts\Container\BindingResolutionException
      *
      * @return \Helldar\LangTranslations\Contracts\Lang
      */
     protected function app(string $classname)
     {
-        return Container::getInstance()
-            ->make($classname);
+        return Container::getInstance()->make($classname);
     }
 }

@@ -5,17 +5,12 @@ namespace Helldar\LangTranslations\Console;
 use Helldar\Support\Facades\Helpers\Filesystem\Directory;
 use Illuminate\Console\Command;
 
-use function resource_path;
-
 class Update extends Command
 {
     protected $signature = 'lang-translations:update {--j|json}';
 
     protected $description = 'Update translations files.';
 
-    /**
-     * @throws \Helldar\Support\Exceptions\DirectoryNotFoundException
-     */
     public function handle()
     {
         $this->install(
