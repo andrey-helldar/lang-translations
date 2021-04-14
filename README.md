@@ -60,11 +60,10 @@ The package replaces only certain files in your lang directories:
 
 He does not touch any other files.
 
-When updating, the package reads your changes in the files and adds them to your own. This means that if you fill in the files yourself, the package will not
-remove anything from them.
+When updating, the package reads your changes in the files and adds them to your own. This means that if you fill in the files yourself, the package will not remove anything from
+them.
 
-Also, if you select a JSON file type, localization files will be automatically generated from existing translation files. JSON file will be sorted in
-alphabetical order.
+Also, if you select a JSON file type, localization files will be automatically generated from existing translation files. JSON file will be sorted in alphabetical order.
 
 
 ### Install translations
@@ -94,17 +93,11 @@ php artisan lang-translations:install en -j
 
 ### Update translations
 
-When executing the `php artisan lang-translations:update` command, the package learns which localizations are installed in your application and will replace the
-matching files.
+When executing the `php artisan lang-translations:update` command, the package learns which localizations are installed in your application and will replace the matching files.
 
 Command `php artisan lang-translations:update` is an alias of `php artisan lang-translations:install {langs} --force`.
 
 And command for updating json files: `php artisan lang-translations:update --json`
-
-
-## Status of files
-
-Check the [TODO](TODO.md) file to see the missing translations.
 
 
 ## Copyright and License
