@@ -34,7 +34,7 @@ jobs:
                     composer update --prefer-stable --prefer-dist --no-progress --no-interaction
 
             -   name: Execute tests
-                run: vendor/bin/phpunit
+                run: sudo vendor/bin/phpunit
 
     laravel_56:
         runs-on: ubuntu-latest
@@ -68,7 +68,7 @@ jobs:
                     composer update --prefer-stable --prefer-dist --no-progress --no-interaction
 
             -   name: Execute tests
-                run: vendor/bin/phpunit
+                run: sudo vendor/bin/phpunit
 
     laravel_57:
         runs-on: ubuntu-latest
@@ -102,7 +102,7 @@ jobs:
                     composer update --prefer-stable --prefer-dist --no-progress --no-interaction
 
             -   name: Execute tests
-                run: vendor/bin/phpunit
+                run: sudo vendor/bin/phpunit
 
     laravel_58:
         runs-on: ubuntu-latest
@@ -136,7 +136,7 @@ jobs:
                     composer update --prefer-stable --prefer-dist --no-progress --no-interaction
 
             -   name: Execute tests
-                run: vendor/bin/phpunit
+                run: sudo vendor/bin/phpunit
 
     laravel_6x:
         runs-on: ubuntu-latest
@@ -170,7 +170,7 @@ jobs:
                     composer update --prefer-stable --prefer-dist --no-progress --no-interaction
 
             -   name: Execute tests
-                run: vendor/bin/phpunit
+                run: sudo vendor/bin/phpunit
 
     laravel_7x:
         runs-on: ubuntu-latest
@@ -204,7 +204,7 @@ jobs:
                     composer update --prefer-stable --prefer-dist --no-progress --no-interaction
 
             -   name: Execute tests
-                run: vendor/bin/phpunit
+                run: sudo vendor/bin/phpunit
 
     laravel_8x:
         runs-on: ubuntu-latest
@@ -238,4 +238,4 @@ jobs:
                     composer update --prefer-stable --prefer-dist --no-progress --no-interaction
 
             -   name: Execute tests
-                run: vendor/bin/phpunit
+                run: sudo vendor/bin/phpunit
