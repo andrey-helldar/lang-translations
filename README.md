@@ -70,6 +70,19 @@ return [
 ];
 ```
 
+## License
+
+This package is licensed under the [MIT License](LICENSE).
+
+
+## For Enterprise
+
+Available as part of the Tidelift Subscription.
+
+The maintainers of `andrey-helldar/lang-translations` and thousands of other packages are working with Tidelift to deliver commercial support and maintenance for the open source packages you use to build your applications. Save time, reduce risk, and improve code health, while paying the maintainers of the exact packages you use. [Learn more](https://tidelift.com/subscription/pkg/packagist-andrey-helldar-lang-translations?utm_source=packagist-andrey-helldar-lang-translations&utm_medium=referral&utm_campaign=enterprise&utm_term=repo).
+
+
+
 [badge_stable]:     https://img.shields.io/github/v/release/andrey-helldar/lang-translations?label=stable&style=flat-square
 
 [badge_unstable]:   https://img.shields.io/badge/unstable-dev--main-orange?style=flat-square
