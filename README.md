@@ -9,6 +9,10 @@ Translation support for 78 languages.
 [![Total Downloads][badge_downloads]][link_packagist]
 [![License][badge_license]][link_license]
 
+> Note
+> 
+> This package is abandoned. Use the [`laravel-lang/http-statuses`](https://github.com/Laravel-Lang/http-statuses) instead.
+
 
 ## Installation
 
